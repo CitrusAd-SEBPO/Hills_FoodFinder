@@ -59,6 +59,14 @@
                                 tagName : "tagging name",
                                 cta : "Buy Now"
 
+                              },
+                              {
+                                productName : "Product Four",
+                                img : "img4.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
                               }
                             ]
                           }
@@ -170,58 +178,58 @@
     // End Dog : Product list
 
     // CAT : Product list
-    const cat = [
-        {
-          years : [
-            {
-              yearName : "0–1 year",
-              foodType : [
-                {
-                    typeName : "dry",
-                    category : [
-                      {
-                        categoryName : "weightManagement",
-                        items : [
-                          {
-                            productName : "Product one",
-                            img : "sku.png",
-                            link : "test.com",
-                            tagName : "tagging name",
-                            cta : "Buy Now",
-                            size : "small/Medium/"
+    // const cat = [
+    //     {
+    //       years : [
+    //         {
+    //           yearName : "0–1 year",
+    //           foodType : [
+    //             {
+    //                 typeName : "dry",
+    //                 category : [
+    //                   {
+    //                     categoryName : "weightManagement",
+    //                     items : [
+    //                       {
+    //                         productName : "Product one",
+    //                         img : "sku.png",
+    //                         link : "test.com",
+    //                         tagName : "tagging name",
+    //                         cta : "Buy Now",
+    //                         size : "small/Medium/"
 
-                          },
-                          {
-                            productName : "Product Two",
-                            img : "img2.png",
-                            link : "test.com",
-                            tagName : "tagging name",
-                            cta : "Buy Now"
+    //                       },
+    //                       {
+    //                         productName : "Product Two",
+    //                         img : "img2.png",
+    //                         link : "test.com",
+    //                         tagName : "tagging name",
+    //                         cta : "Buy Now"
 
-                          },
-                          {
-                            productName : "Product Three",
-                            img : "img3.png",
-                            link : "test.com",
-                            tagName : "tagging name",
-                            cta : "Buy Now"
+    //                       },
+    //                       {
+    //                         productName : "Product Three",
+    //                         img : "img3.png",
+    //                         link : "test.com",
+    //                         tagName : "tagging name",
+    //                         cta : "Buy Now"
 
-                          }
-                        ]
-                      }
-                    ]
-                }
-              ]
-            },
+    //                       }
+    //                     ]
+    //                   }
+    //                 ]
+    //             }
+    //           ]
+    //         },
           
-          ],
-        },
+    //       ],
+    //     },
    
-    ]
+    // ]
     // End CAT : Product list
 
 
-
+// Start product listing
     console.log(dog[0].years[0].foodType[0].sizeType[0].category[0].items);
     let items = dog[0].years[0].foodType[0].sizeType[0].category[0].items;
     let dog01_items = dog[0].years[0].foodType[0].sizeType[0].category[0].items.length;
@@ -235,6 +243,8 @@
 
       document.getElementById("test_list").innerHTML = list;
 
+
+    // Start year show
     console.log(dog[0].years);
     let years = dog[0].years;
     let itemLen = dog[0].years.length;
