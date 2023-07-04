@@ -8,10 +8,11 @@
 </head>
 <body>
 
-
+<h3>Test product list</h3>
   <p id="test_list"></p>
 
-  <p id="dogYears"></p>
+  <h3>Test years</h3>
+  <p id="year_list"></p>
   
 
 
@@ -69,7 +70,53 @@
             },
 
             {
-              yearName : "1-6 year",
+              yearName : "1-6 years",
+              foodType : [
+                {
+                    typeName : "dry",
+                    sizeType : [
+                      {
+                        sizeName : "Small and toy (2–25 lb.)",
+                        category : [
+                          {
+                            categoryName : "weightManagement",
+                            items : [
+                              {
+                                productName : "Product one",
+                                img : "sku.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now",
+                                size : "small/Medium/"
+
+                              },
+                              {
+                                productName : "Product Two",
+                                img : "img2.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              },
+                              {
+                                productName : "Product Three",
+                                img : "img3.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                }
+              ]
+            },
+
+            {
+              yearName : "7+ years",
               foodType : [
                 {
                     typeName : "dry",
@@ -175,30 +222,30 @@
 
 
 
-    // console.log(dog[0].years[0].foodType[0].sizeType[0].category[0].items);
-    // let items = dog[0].years[0].foodType[0].sizeType[0].category[0].items;
-    // let dog01_items = dog[0].years[0].foodType[0].sizeType[0].category[0].items.length;
-
-    // let list = "<ul>";
-    //   for (let i = 0; i < dog01_items; i++) {
-    //     list += "<li>" + items[i].productName + "</li>";
-    //     list += "<li>" + items[i].img + "</li><br>";
-    //   }
-    //   list += "</ul>";
-
-    //   document.getElementById("test_list").innerHTML = list;
-
-    console.log(dog[0].years);
-    let items = dog[0].years;
-    let itemLen = dog[0].years.length;
+    console.log(dog[0].years[0].foodType[0].sizeType[0].category[0].items);
+    let items = dog[0].years[0].foodType[0].sizeType[0].category[0].items;
+    let dog01_items = dog[0].years[0].foodType[0].sizeType[0].category[0].items.length;
 
     let list = "<ul>";
-      for (let i = 0; i < itemLen; i++) {
-        list += "<li>" + items[i].yearName + "</li><br>";
+      for (let i = 0; i < dog01_items; i++) {
+        list += "<li>" + items[i].productName + "</li>";
+        list += "<li>" + items[i].img + "</li><br>";
       }
       list += "</ul>";
 
       document.getElementById("test_list").innerHTML = list;
+
+    console.log(dog[0].years);
+    let years = dog[0].years;
+    let itemLen = dog[0].years.length;
+
+    let yearsDiv = "<ul>";
+      for (let i = 0; i < itemLen; i++) {
+        yearsDiv += "<li>" + years[i].yearName + "</li><br>";
+      }
+      yearsDiv += "</ul>";
+
+      document.getElementById("year_list").innerHTML = yearsDiv;
           
   </script>
 
