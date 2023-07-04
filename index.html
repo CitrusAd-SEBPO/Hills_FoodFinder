@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <p id="test_list"></p>
+
+  <p id="dogYears"></p>
+  
+
+
+
+
+  <script>
+    // Dog : Product list
+    const dog = [
+        {
+          years : [
+            {
+              yearName : "0-1 year",
+              foodType : [
+                {
+                    typeName : "dry",
+                    sizeType : [
+                      {
+                        sizeName : "Small and toy (2–25 lb.)",
+                        category : [
+                          {
+                            categoryName : "weightManagement",
+                            items : [
+                              {
+                                productName : "Product one",
+                                img : "sku.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now",
+                                size : "small/Medium/"
+
+                              },
+                              {
+                                productName : "Product Two",
+                                img : "img2.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              },
+                              {
+                                productName : "Product Three",
+                                img : "img3.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                }
+              ]
+            },
+
+            {
+              yearName : "1-6 year",
+              foodType : [
+                {
+                    typeName : "dry",
+                    sizeType : [
+                      {
+                        sizeName : "Small and toy (2–25 lb.)",
+                        category : [
+                          {
+                            categoryName : "weightManagement",
+                            items : [
+                              {
+                                productName : "Product one",
+                                img : "sku.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now",
+                                size : "small/Medium/"
+
+                              },
+                              {
+                                productName : "Product Two",
+                                img : "img2.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              },
+                              {
+                                productName : "Product Three",
+                                img : "img3.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                }
+              ]
+            }
+
+          ],
+
+          
+        },
+   
+    ];
+    // End Dog : Product list
+
+    // CAT : Product list
+    const cat = [
+        {
+          years : [
+            {
+              yearName : "0–1 year",
+              foodType : [
+                {
+                    typeName : "dry",
+                    category : [
+                      {
+                        categoryName : "weightManagement",
+                        items : [
+                          {
+                            productName : "Product one",
+                            img : "sku.png",
+                            link : "test.com",
+                            tagName : "tagging name",
+                            cta : "Buy Now",
+                            size : "small/Medium/"
+
+                          },
+                          {
+                            productName : "Product Two",
+                            img : "img2.png",
+                            link : "test.com",
+                            tagName : "tagging name",
+                            cta : "Buy Now"
+
+                          },
+                          {
+                            productName : "Product Three",
+                            img : "img3.png",
+                            link : "test.com",
+                            tagName : "tagging name",
+                            cta : "Buy Now"
+
+                          }
+                        ]
+                      }
+                    ]
+                }
+              ]
+            },
+          
+          ],
+        },
+   
+    ]
+    // End CAT : Product list
+
+
+
+    // console.log(dog[0].years[0].foodType[0].sizeType[0].category[0].items);
+    // let items = dog[0].years[0].foodType[0].sizeType[0].category[0].items;
+    // let dog01_items = dog[0].years[0].foodType[0].sizeType[0].category[0].items.length;
+
+    // let list = "<ul>";
+    //   for (let i = 0; i < dog01_items; i++) {
+    //     list += "<li>" + items[i].productName + "</li>";
+    //     list += "<li>" + items[i].img + "</li><br>";
+    //   }
+    //   list += "</ul>";
+
+    //   document.getElementById("test_list").innerHTML = list;
+
+    console.log(dog[0].years);
+    let items = dog[0].years;
+    let itemLen = dog[0].years.length;
+
+    let list = "<ul>";
+      for (let i = 0; i < itemLen; i++) {
+        list += "<li>" + items[i].yearName + "</li><br>";
+      }
+      list += "</ul>";
+
+      document.getElementById("test_list").innerHTML = list;
+          
+  </script>
+
+</body>
+</html>
