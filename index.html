@@ -13,30 +13,79 @@
 
   <h3>Test years</h3>
   <p id="year_list"></p>
+
+  <ul>
+   <button>Pet Specifies</button>
+    
+    <li>Cat</li>
+      <ul>
+        <li>0-1 year</li>
+        <ul>
+          <li>dry</li>
+          <ul>
+            <li>Small</li>
+            <ul>
+              <li>Weight Management</li>
+              <ul>
+                <li>Items</li>
+                <li>Items2</li>
+              </ul>
+              <li>Dental</li>
+              <ul>
+                <li>Items3</li>
+                <li>Items4</li>
+              </ul>
+            </ul>
+            <li>Medium</li>
+            <ul>
+              <li>Weight Management1</li>
+              <ul>
+                <li>Items5</li>
+                <li>Items6</li>
+              </ul>
+              <li>Dental</li>
+              <ul>
+                <li>Items7</li>
+                <li>Items8</li>
+              </ul>
+            </ul>
+          </ul>
+          <li>Wet</li>
+        </ul>
+        <li>1-6 years</li>
+      </ul>
+  </ul>
+
   
 
 
 
 
   <script>
-    // Dog : Product list
-    const dog = [
+    const animals = [
         {
-          years : [
-            {
-              yearName : "0-1 year",
-              foodType : [
+          img : "src.png",
+          title : "dog",
+          breadcrumb : "Pet Specifies",
+          items : [
+          {
+              title : "0-1 year",
+              breadcrumb : "Year Range",
+              items : [
                 {
-                    typeName : "dry",
-                    sizeType : [
+                    title : "dry",
+                    breadcrumb : "Food Type",
+                    items : [
                       {
-                        sizeName : "Small and toy (2–25 lb.)",
-                        category : [
+                        title : "Small and toy (2–25 lb.)",
+                        breadcrumb : "Breed Size",
+                        items : [
                           {
-                            categoryName : "weightManagement",
+                            title : "weightManagement",
+                            breadcrumb : "special Notes",
                             items : [
                               {
-                                productName : "Product one",
+                                title : "Product one",
                                 img : "sku.png",
                                 link : "test.com",
                                 tagName : "tagging name",
@@ -45,7 +94,7 @@
 
                               },
                               {
-                                productName : "Product Two",
+                                title : "Product Two",
                                 img : "img2.png",
                                 link : "test.com",
                                 tagName : "tagging name",
@@ -53,7 +102,7 @@
 
                               },
                               {
-                                productName : "Product Three",
+                                title : "Product Three",
                                 img : "img3.png",
                                 link : "test.com",
                                 tagName : "tagging name",
@@ -61,7 +110,7 @@
 
                               },
                               {
-                                productName : "Product Four",
+                                title : "Product Four",
                                 img : "img4.png",
                                 link : "test.com",
                                 tagName : "tagging name",
@@ -78,19 +127,23 @@
             },
 
             {
-              yearName : "1-6 years",
-              foodType : [
+              title : "1-6 years",
+              breadcrumb : "Year Range",
+              items : [
                 {
-                    typeName : "dry",
-                    sizeType : [
+                    title : "dry",
+                    breadcrumb : "Food Type",
+                    items : [
                       {
-                        sizeName : "Small and toy (2–25 lb.)",
-                        category : [
+                        title : "Small and toy (2–25 lb.)",
+                        breadcrumb : "Breed Size",
+                        items : [
                           {
-                            categoryName : "weightManagement",
+                            title : "weightManagement",
+                            breadcrumb : "Special Notes",
                             items : [
                               {
-                                productName : "Product one",
+                                title : "Product one",
                                 img : "sku.png",
                                 link : "test.com",
                                 tagName : "tagging name",
@@ -99,7 +152,7 @@
 
                               },
                               {
-                                productName : "Product Two",
+                                title : "Product Two",
                                 img : "img2.png",
                                 link : "test.com",
                                 tagName : "tagging name",
@@ -107,7 +160,227 @@
 
                               },
                               {
-                                productName : "Product Three",
+                                title : "Product Three",
+                                img : "img3.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                }
+              ]
+            },]
+        },
+      
+        {
+          img : "src.png",
+          title : "cat",
+          breadcrumb : "Pet Specifies",
+          items : [
+          {
+              title : "0-1 year",
+              breadcrumb : "Year Range",
+              items : [
+                {
+                    title : "dry",
+                    breadcrumb : "Food Type",
+                    items : [
+                      {
+                        title : "Small and toy (2–25 lb.)",
+                        breadcrumb : "Breed Size",
+                        items : [
+                          {
+                            title : "weightManagement",
+                            breadcrumb : "special Notes",
+                            items : [
+                              {
+                                title : "Product one",
+                                img : "sku.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now",
+                                size : "small/Medium/"
+
+                              },
+                              {
+                                title : "Product Two",
+                                img : "img2.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              },
+                              {
+                                title : "Product Three",
+                                img : "img3.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              },
+                              {
+                                title : "Product Four",
+                                img : "img4.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                }
+              ]
+            },
+
+            {
+              title : "1-6 years",
+              breadcrumb : "Year Range",
+              items : [
+                {
+                    title : "dry",
+                    breadcrumb : "Food Type",
+                    items : [
+                      {
+                        title : "Small and toy (2–25 lb.)",
+                        breadcrumb : "Breed Size",
+                        items : [
+                          {
+                            title : "weightManagement",
+                            breadcrumb : "Special Notes",
+                            items : [
+                              {
+                                title : "Product one",
+                                img : "sku.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now",
+                                size : "small/Medium/"
+
+                              },
+                              {
+                                title : "Product Two",
+                                img : "img2.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              },
+                              {
+                                title : "Product Three",
+                                img : "img3.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                }
+              ]
+            },]
+        }
+      
+      ]
+    // Dog : Product list
+    const dog = [
+        {
+          years : [
+            {
+              title : "0-1 year",
+              items : [
+                {
+                    title : "dry",
+                    items : [
+                      {
+                        title : "Small and toy (2–25 lb.)",
+                        items : [
+                          {
+                            title : "weightManagement",
+                            items : [
+                              {
+                                title : "Product one",
+                                img : "sku.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now",
+                                size : "small/Medium/"
+
+                              },
+                              {
+                                title : "Product Two",
+                                img : "img2.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              },
+                              {
+                                title : "Product Three",
+                                img : "img3.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              },
+                              {
+                                title : "Product Four",
+                                img : "img4.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                }
+              ]
+            },
+
+            {
+              title : "1-6 years",
+              items : [
+                {
+                    title : "dry",
+                    items : [
+                      {
+                        title : "Small and toy (2–25 lb.)",
+                        items : [
+                          {
+                            title : "weightManagement",
+                            items : [
+                              {
+                                title : "Product one",
+                                img : "sku.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now",
+                                size : "small/Medium/"
+
+                              },
+                              {
+                                title : "Product Two",
+                                img : "img2.png",
+                                link : "test.com",
+                                tagName : "tagging name",
+                                cta : "Buy Now"
+
+                              },
+                              {
+                                title : "Product Three",
                                 img : "img3.png",
                                 link : "test.com",
                                 tagName : "tagging name",
@@ -124,19 +397,19 @@
             },
 
             {
-              yearName : "7+ years",
-              foodType : [
+              title : "7+ years",
+              items : [
                 {
-                    typeName : "dry",
-                    sizeType : [
+                    title : "dry",
+                    items : [
                       {
-                        sizeName : "Small and toy (2–25 lb.)",
-                        category : [
+                        title : "Small and toy (2–25 lb.)",
+                        items : [
                           {
-                            categoryName : "weightManagement",
+                            title : "weightManagement",
                             items : [
                               {
-                                productName : "Product one",
+                                title : "Product one",
                                 img : "sku.png",
                                 link : "test.com",
                                 tagName : "tagging name",
@@ -145,7 +418,7 @@
 
                               },
                               {
-                                productName : "Product Two",
+                                title : "Product Two",
                                 img : "img2.png",
                                 link : "test.com",
                                 tagName : "tagging name",
@@ -153,7 +426,7 @@
 
                               },
                               {
-                                productName : "Product Three",
+                                title : "Product Three",
                                 img : "img3.png",
                                 link : "test.com",
                                 tagName : "tagging name",
@@ -182,16 +455,16 @@
     //     {
     //       years : [
     //         {
-    //           yearName : "0–1 year",
-    //           foodType : [
+    //           title : "0–1 year",
+    //           items : [
     //             {
-    //                 typeName : "dry",
-    //                 category : [
+    //                 title : "dry",
+    //                 items : [
     //                   {
-    //                     categoryName : "weightManagement",
+    //                     title : "weightManagement",
     //                     items : [
     //                       {
-    //                         productName : "Product one",
+    //                         title : "Product one",
     //                         img : "sku.png",
     //                         link : "test.com",
     //                         tagName : "tagging name",
@@ -200,7 +473,7 @@
 
     //                       },
     //                       {
-    //                         productName : "Product Two",
+    //                         title : "Product Two",
     //                         img : "img2.png",
     //                         link : "test.com",
     //                         tagName : "tagging name",
@@ -208,7 +481,7 @@
 
     //                       },
     //                       {
-    //                         productName : "Product Three",
+    //                         title : "Product Three",
     //                         img : "img3.png",
     //                         link : "test.com",
     //                         tagName : "tagging name",
@@ -229,19 +502,48 @@
     // End CAT : Product list
 
 
+      let html = "<ul>";
+        animals.forEach((animal) => {
+          
+          html += `<li>${animal.title}</li>`;
+          html += "<ul>";
+            animal.items.forEach((year) => {
+              console.log(year);
+              html += `<li>${year.title}</li>`;
+              html += "<ul>";
+                year.items.forEach((type) => {
+                html += `<li>${type.title}</li>`;
+                html += "<ul>";
+                  type.items.forEach((size) => {
+                  html += `<li>${size.title}</li>`;
+                  html += "<ul>";
+                    size.items.forEach((product) => {
+                    html += `<li>${product.title}</li>`;
+                  })
+                  html += "</ul>";
+                })
+                html += "</ul>";
+              })
+              html += "</ul>";
+            })
+            html += "</ul>";
+        })
+
+
+
 // Start product listing
-    console.log(dog[0].years[0].foodType[0].sizeType[0].category[0].items);
-    let items = dog[0].years[0].foodType[0].sizeType[0].category[0].items;
-    let dog01_items = dog[0].years[0].foodType[0].sizeType[0].category[0].items.length;
+    console.log(dog[0].years[0].items[0].items[0].items[0].items);
+    let items = dog[0].years[0].items[0].items[0].items[0].items;
+    let dog01_items = dog[0].years[0].items[0].items[0].items[0].items.length;
 
     let list = "<ul>";
-      for (let i = 0; i < dog01_items; i++) {
-        list += "<li>" + items[i].productName + "</li>";
-        list += "<li>" + items[i].img + "</li><br>";
+      for (let i = 0; i < animals; i++) {
+        list += "<ul>" + animals[i].title;
+          list += "</ul>";
       }
       list += "</ul>";
 
-      document.getElementById("test_list").innerHTML = list;
+      document.getElementById("test_list").innerHTML = html;
 
 
     // Start year show
@@ -251,7 +553,7 @@
 
     let yearsDiv = "<ul>";
       for (let i = 0; i < itemLen; i++) {
-        yearsDiv += "<li>" + years[i].yearName + "</li><br>";
+        yearsDiv += "<li class='test1'>" + years[i].title + "</li><br>";
       }
       yearsDiv += "</ul>";
 
