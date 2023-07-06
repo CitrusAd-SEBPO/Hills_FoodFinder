@@ -1,0 +1,11 @@
+
+.citrus_hills img{
+    width: 100%;
+}
+
+.citrus_hills .flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}

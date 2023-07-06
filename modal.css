@@ -1,0 +1,86 @@
+/* The citrus petco hills modal  */
+.citrus_petco_hills_modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 70%;
+    max-width: 950px; 
+    height: 100%; 
+    overflow: auto;
+    -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  
+  .citrus_petco_hills_modal-content {
+    position: fixed;
+    right: 0;
+    background-color: #fefefe;
+    width: 70%;
+    max-width: 950;
+    padding: 30px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+        height: 100%;
+      box-shadow: 0 5px 3px 0 #ddd;
+  }
+
+  .hills_modals_header{
+    gap: 40px;
+  }
+
+  .hills_modals_header__logo{
+    max-width: 110px;
+  }
+
+  .hills_modals_header h2{
+    color: #00205B;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .close {
+      color: #8B8B8B;
+      float: right;
+      font-size: 30px;
+      font-weight: normal;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .citrus_petco_hills_modal-header {
+    padding: 2px 16px;
+  }
+  
+  .citrus_petco_hills_modal-body {padding: 2px 16px;}
+  
+  @-webkit-keyframes slideIn {
+    from {right: -100px; opacity: 0} 
+    to {right: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {right: -100px; opacity: 0}
+    to {right: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
