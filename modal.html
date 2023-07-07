@@ -2,8 +2,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="modal.css">
 <link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="modal.css">
+<link rel="stylesheet" href="tab.css">
 </head>
 <body>
 
@@ -24,18 +26,57 @@
             <h2>Find the right food for your pet</h2>
         </div>
         <div class="hills_modals_bread flex-box">
-            <div class="hills_modals_bread__container">
-                <button>Pet Species</button>
-                <button>Pet Species</button>
-                <button>Pet Species</button>
-                <button>Pet Species</button>
-                <button>Pet Species</button>
+            <div class="bread__container flex-box">
+                <button class="bread_btn" onclick="showContent(event, 'pet_species')">Pet Species</button>
+                <button class="bread_btn" onclick="showContent(event, 'year_range')">Year Range</button>
+                <button class="bread_btn" onclick="showContent(event, 'food_type')">Food Type</button>
+                <button class="bread_btn" onclick="showContent(event, 'breed_size')">Breed Size</button>
+                <button class="bread_btn" onclick="showContent(event, 'special_need')">Special Need</button>
             </div>
             <button class="reset-search">Start Over</button>
         </div>
         <div class="citrus_petco_hills_modal-body">
-        <p>Some text in the citrus_petco_hills Food Finder</p>
-        <p>Some other text...</p>
+            <div class="search_content" id="pet_species">
+                <h3>Which type of pet do you have?</h3>
+                <div class="search-type flex-box">
+                    <h3>Buttons of Dog and Cats</h3>
+                </div>
+            </div>
+            <div class="search_content" id="year_range">
+                <h3>How old is your dog?</h3>
+                <div class="search-type flex-box">
+                    <button class="search-type-btn">0–1 year</button>
+                    <button class="search-type-btn">1–6 years</button>
+                    <button class="search-type-btn">7+ years</button>
+                </div>
+            </div>
+            <div class="search_content" id="food_type">
+                <h3>Are you shopping for dry or wet food?</h3>
+                <div class="search-type flex-box">
+                    <button class="search-type-btn">Dry food</button>
+                    <button class="search-type-btn">Wet food</button>
+                    <button class="search-type-btn">Both</button>
+                </div>
+            </div>
+            <div class="search_content" id="breed_size">
+                <h3>What is your dog’s breed size?</h3>
+                <div class="search-type flex-box">
+                    <button class="search-type-btn">Small and toy (2–25 lb.)</button>
+                    <button class="search-type-btn">Medium (25–50 lb.)</button>
+                    <button class="search-type-btn">Large (50+ lb.)</button>
+                </div>
+            </div>
+            <div class="search_content" id="special_need">
+                <h3>Does your dog have any specific needs?</h3>
+                <div class="search-type flex-box">
+                    <button class="search-type-btn">Weight management</button>
+                    <button class="search-type-btn">Skin & coat sensitivities</button>
+                    <button class="search-type-btn">Digestive sensitivities</button>
+                    <button class="search-type-btn">Mobility health</button>
+                    <button class="search-type-btn">Dental</button>
+                    <button class="search-type-btn">None</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -43,6 +84,7 @@
 </div>
 
 <script src="modal.js"></script>
+<script src="tab.js"></script>
 
 </body>
 </html>

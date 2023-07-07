@@ -17,4 +17,9 @@ window.onclick = function(event) {
   if (event.target == citrus_petco_hills_modal) {
     citrus_petco_hills_modal.style.display = "none";
   }
-}
+};
+
+
+// Show Modals on a link
+//Code will be here...
+
