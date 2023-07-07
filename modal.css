@@ -165,3 +165,39 @@
     background: none;
     cursor: pointer;
   }
+
+  /* Pet buttons Step one */
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet{
+    gap : 63px;
+  }
+
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet a{
+    width: 255px;
+    height: 277px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet a img{
+    width: 118px;
+    padding: 43px 68px;
+    display: flex;
+  }
+
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet a button{
+    background: #00205B;
+    color: #fff;
+    width: 100%;
+    border: none;
+    height: 70px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 29px;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-end;
+  }
