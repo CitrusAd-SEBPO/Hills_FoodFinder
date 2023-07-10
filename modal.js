@@ -21,5 +21,9 @@ window.onclick = function(event) {
 
 
 // Show Modals on a link
-//Code will be here...
+if (window.location.pathname === "/Hills_FoodFinder/modal.html")
+
+  document.getElementById('citrus_petco_hills_modal').setAttribute('style', 'display: block !important');
+
+  document.getElementById('citrus_petco_hills_modal').style.setProperty('display', 'block', 'important');
 

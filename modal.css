@@ -171,6 +171,12 @@
     gap : 63px;
   }
 
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet span{
+    font-size: 42px;
+    color: #8B8B8B;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+  }
+
   .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet a{
     width: 255px;
     height: 277px;
@@ -181,14 +187,25 @@
     overflow: hidden;
   }
 
-  .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet a img{
-    width: 118px;
-    padding: 43px 68px;
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet a:hover img{
+    width: 138px;
+    padding: 43px 28px 23px;
     display: flex;
   }
 
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet a img{
+    width: 138px;
+    padding: 43px 28px 23px;
+    display: flex;
+  }
+
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet a img:hover{
+    padding: 43px 6px 0;
+    width: 158px;
+    transition: 0.4s ease-in-out;
+  }
+
   .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet a button{
-    background: #00205B;
     color: #fff;
     width: 100%;
     border: none;
@@ -197,7 +214,8 @@
     cursor: pointer;
     font-size: 29px;
     font-family: "PetcoCircularTT-Bold", arial !important;
-    justify-content: space-around;
-    display: flex;
-    align-items: flex-end;
+    background-image: url("img/citrus_hills_cta-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: unset;
   }
