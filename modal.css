@@ -219,3 +219,30 @@
     background-repeat: no-repeat;
     background-color: unset;
   }
+
+  /* Product list */
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a{
+    max-width: 230px;
+    flex-wrap: wrap;
+  }
+
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a img{
+    max-width: 196px;
+    margin: 0 auto;
+  }
+
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a p{
+    font-size: 18px;
+    color: #333;
+    font-family: "PetcoCircularTT-Regular", arial !important;
+    padding: 20px 0;
+    text-align: left;
+  }
+
+  .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a .cta-underline{
+    text-align: left;
+  }
