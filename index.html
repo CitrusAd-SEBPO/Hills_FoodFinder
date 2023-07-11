@@ -5,16 +5,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="modal.css">
+<link rel="stylesheet" href="tab.css">
 </head>
 <body>
 
 <h3>Test product list</h3>
   <p id="test_list"></p>
 
-  <h3>Test years</h3>
-  <p id="year_list"></p>
 
-  <ul>
+  <div class="citrus_hills" id="citrus_hills">
+    <!-- The citrus petco hills modal  -->
+    <button id="findFood">Open Food Finder</button>
+
+    <div id="citrus_petco_hills_modal" class="citrus_petco_hills_modal">
+
+        <div class="citrus_petco_hills_modal-content">
+            <span class="close">&times;</span>
+            <div class="hills_modals_header flex-box">
+                <div class="hills_modals_header__logo">
+                    <img src="img/citrus_hills_logo.png" alt="Hill’s logo. Science did that.">
+                </div>
+                <h2>Find the right food for your pet</h2>
+            </div>
+            <div id="content_wrapper">
+              <div class="content_wrapper__content">
+
+              </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+  <!-- <ul>
    <button>Pet Specifies</button>
     
     <li>Cat</li>
@@ -54,7 +80,7 @@
         </ul>
         <li>1-6 years</li>
       </ul>
-  </ul>
+  </ul> -->
 
   
 
@@ -64,8 +90,8 @@
   <script>
     const animals = [
         {
-          img : "src.png",
-          title : "dog",
+          question : "Which type of pet do you have?",
+          title : "cat",
           breadcrumb : "Pet Specifies",
           items : [
           {
@@ -179,7 +205,7 @@
       
         {
           img : "src.png",
-          title : "cat",
+          title : "dog",
           breadcrumb : "Pet Specifies",
           items : [
           {
@@ -530,36 +556,91 @@
         })
 
 
+        document.getElementById("test_list").innerHTML = html;
+
+
+
+
+
 
 // Start product listing
-    console.log(dog[0].years[0].items[0].items[0].items[0].items);
-    let items = dog[0].years[0].items[0].items[0].items[0].items;
-    let dog01_items = dog[0].years[0].items[0].items[0].items[0].items.length;
+    // console.log(dog[0].years[0].items[0].items[0].items[0].items);
+    // let items = dog[0].years[0].items[0].items[0].items[0].items;
+    // let dog01_items = dog[0].years[0].items[0].items[0].items[0].items.length;
 
-    let list = "<ul>";
-      for (let i = 0; i < animals; i++) {
-        list += "<ul>" + animals[i].title;
-          list += "</ul>";
-      }
-      list += "</ul>";
+    // let list = "<ul>";
+    //   for (let i = 0; i < animals; i++) {
+    //     list += "<ul>" + animals[i].title;
+    //       list += "</ul>";
+    //   }
+    //   list += "</ul>";
 
-      document.getElementById("test_list").innerHTML = html;
+      // document.getElementById("test_list").innerHTML = list;
 
 
     // Start year show
-    console.log(dog[0].years);
-    let years = dog[0].years;
-    let itemLen = dog[0].years.length;
+    // console.log(dog[0].years);
+    // let years = dog[0].years;
+    // let itemLen = dog[0].years.length;
 
-    let yearsDiv = "<ul>";
-      for (let i = 0; i < itemLen; i++) {
-        yearsDiv += "<li class='test1'>" + years[i].title + "</li><br>";
-      }
-      yearsDiv += "</ul>";
+    // let yearsDiv = "<ul>";
+    //   for (let i = 0; i < itemLen; i++) {
+    //     yearsDiv += "<li class='test1'>" + years[i].title + "</li><br>";
+    //   }
+    //   yearsDiv += "</ul>";
 
-      document.getElementById("year_list").innerHTML = yearsDiv;
+    //   document.getElementById("year_list").innerHTML = yearsDiv;
           
   </script>
+
+  <script>
+        // JS with project styles
+        let finder_wrapper = "<div class='content_wrapper__content'>";
+
+        animals.forEach((animal) => {
+
+          finder_wrapper += `<div class="citrus_petco_hills_modal-body">`;
+            finder_wrapper += `<div class="search_content" id="pet_species">`;
+          
+          finder_wrapper += `<h3>${animal.question}</h3>`;
+          finder_wrapper += "<ul>";
+            animal.items.forEach((year) => {
+              console.log(year);
+              finder_wrapper += `<li>${year.title}</li>`;
+              finder_wrapper += "<ul>";
+                year.items.forEach((type) => {
+                  finder_wrapper += `<li>${type.title}</li>`;
+                  finder_wrapper += "<ul>";
+                  type.items.forEach((size) => {
+                    finder_wrapper += `<li>${size.title}</li>`;
+                    finder_wrapper += "<ul>";
+                    size.items.forEach((product) => {
+                      finder_wrapper += `<li>${product.title}</li>`;
+                  })
+                  finder_wrapper += "</ul>";
+                })
+                finder_wrapper += "</ul>";
+              })
+              finder_wrapper += `</div class="search_content" id="pet_species">`;
+              finder_wrapper += `</div class="citrus_petco_hills_modal-body">`;
+            })
+            finder_wrapper += "<div class='content_wrapper__content'>";
+        })
+
+
+        document.getElementById("content_wrapper").innerHTML = finder_wrapper;
+
+
+        // Show Modals on a link
+      if (window.location.pathname === "/Hills_FoodFinder/index.html")
+
+      document.getElementById('citrus_petco_hills_modal').setAttribute('style', 'display: block !important');
+
+      document.getElementById('citrus_petco_hills_modal').style.setProperty('display', 'block', 'important');
+  </script>
+
+<script src="modal.js"></script>
+<script src="tab.js"></script>
 
 </body>
 </html>

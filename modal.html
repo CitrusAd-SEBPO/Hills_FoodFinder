@@ -17,104 +17,104 @@
 
     <div id="citrus_petco_hills_modal" class="citrus_petco_hills_modal">
 
-    <div class="citrus_petco_hills_modal-content">
-        <span class="close">&times;</span>
-        <div class="hills_modals_header flex-box">
-            <div class="hills_modals_header__logo">
-                <img src="img/citrus_hills_logo.png" alt="Hill’s logo. Science did that.">
+        <div class="citrus_petco_hills_modal-content">
+            <span class="close">&times;</span>
+            <div class="hills_modals_header flex-box">
+                <div class="hills_modals_header__logo">
+                    <img src="img/citrus_hills_logo.png" alt="Hill’s logo. Science did that.">
+                </div>
+                <h2>Find the right food for your pet</h2>
             </div>
-            <h2>Find the right food for your pet</h2>
-        </div>
-        <div class="hills_modals_bread flex-box">
-            <div class="bread__container flex-box">
-                <button class="bread_btn" onclick="showContent(event, 'pet_species')">Pet Species</button>
-                <button class="bread_btn" onclick="showContent(event, 'year_range')">Year Range</button>
-                <button class="bread_btn" onclick="showContent(event, 'food_type')">Food Type</button>
-                <button class="bread_btn" onclick="showContent(event, 'breed_size')">Breed Size</button>
-                <button class="bread_btn" onclick="showContent(event, 'special_need')">Special Need</button>
+            <div class="hills_modals_bread flex-box">
+                <div class="bread__container flex-box">
+                    <button class="bread_btn" onclick="showContent(event, 'pet_species')" id="defaultOpen">Pet Species</button>
+                    <button class="bread_btn" onclick="showContent(event, 'year_range')">Year Range</button>
+                    <button class="bread_btn" onclick="showContent(event, 'food_type')">Food Type</button>
+                    <button class="bread_btn" onclick="showContent(event, 'breed_size')">Breed Size</button>
+                    <button class="bread_btn" onclick="showContent(event, 'special_need')">Special Need</button>
+                </div>
+                <button class="reset-search">Start Over</button>
             </div>
-            <button class="reset-search">Start Over</button>
-        </div>
-        <div class="citrus_petco_hills_modal-body">
-            <div class="search_content" id="pet_species">
-                <h3>Which type of pet do you have?</h3>
-                <div class="search-type">
-                    <div class="chose-pet flex-box">
+            <div class="citrus_petco_hills_modal-body">
+                <div class="search_content" id="pet_species">
+                    <h3>Which type of pet do you have?</h3>
+                    <div class="search-type">
+                        <div class="chose-pet flex-box">
+                            <a href="" class="flex-box">
+                                <img src="img/citrus-hills-cat.png" alt="">
+                                <button>Cat</button>
+                            </a>
+                            <span>OR</span>
+                            <a href="" class="flex-box">
+                                <img src="img/citrus-hills-dog.png" alt="">
+                                <button>Dog</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search_content" id="year_range">
+                    <h3>How old is your dog?</h3>
+                    <div class="search-type flex-box">
+                        <button class="search-type-btn">0–1 year</button>
+                        <button class="search-type-btn">1–6 years</button>
+                        <button class="search-type-btn">7+ years</button>
+                    </div>
+                </div>
+                <div class="search_content" id="food_type">
+                    <h3>Are you shopping for dry or wet food?</h3>
+                    <div class="search-type flex-box">
+                        <button class="search-type-btn">Dry food</button>
+                        <button class="search-type-btn">Wet food</button>
+                        <button class="search-type-btn">Both</button>
+                    </div>
+                </div>
+                <div class="search_content" id="breed_size">
+                    <h3>What is your dog’s breed size?</h3>
+                    <div class="search-type flex-box">
+                        <button class="search-type-btn">Small and toy (2–25 lb.)</button>
+                        <button class="search-type-btn">Medium (25–50 lb.)</button>
+                        <button class="search-type-btn">Large (50+ lb.)</button>
+                    </div>
+                </div>
+                <div class="search_content" id="special_need">
+                    <h3>Does your dog have any specific needs?</h3>
+                    <div class="search-type flex-box">
+                        <button class="search-type-btn" onclick="showContent(event, 'product_list')">Weight management</button>
+                        <button class="search-type-btn">Skin & coat sensitivities</button>
+                        <button class="search-type-btn">Digestive sensitivities</button>
+                        <button class="search-type-btn">Mobility health</button>
+                        <button class="search-type-btn">Dental</button>
+                        <button class="search-type-btn">None</button>
+                    </div>
+                </div>
+                <!-- Product List -->
+                <div class="search_content" id="product_list">
+                    <h3>We found 4 products that fit your needs.</h3>
+                    <div class="search-type flex-box products-wrapper">
                         <a href="" class="flex-box">
-                            <img src="img/citrus-hills-cat.png" alt="">
-                            <button>Cat</button>
+                            <img src="img/dog_images_hills/citrus_hills_dog_1213032.png" alt="Product Image">
+                            <p>Product Name and Description Goes Here</p>
+                            <div class="cta-underline">Buy Now</div>
                         </a>
-                        <span>OR</span>
                         <a href="" class="flex-box">
-                            <img src="img/citrus-hills-dog.png" alt="">
-                            <button>Dog</button>
+                            <img src="img/dog_images_hills/citrus_hills_dog_1213059.png" alt="Product Image">
+                            <p>Product Name and Description Goes Here</p>
+                            <div class="cta-underline">Buy Now</div>
+                        </a>
+                        <a href="" class="flex-box">
+                            <img src="img/dog_images_hills/citrus_hills_dog_1309897.png" alt="Product Image">
+                            <p>Product Name and Description Goes Here</p>
+                            <div class="cta-underline">Buy Now</div>
+                        </a>
+                        <a href="" class="flex-box">
+                            <img src="img/dog_images_hills/citrus_hills_dog_1309900.png" alt="Product Image">
+                            <p>Product Name and Description Goes Here</p>
+                            <div class="cta-underline">Buy Now</div>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="search_content" id="year_range">
-                <h3>How old is your dog?</h3>
-                <div class="search-type flex-box">
-                    <button class="search-type-btn">0–1 year</button>
-                    <button class="search-type-btn">1–6 years</button>
-                    <button class="search-type-btn">7+ years</button>
-                </div>
-            </div>
-            <div class="search_content" id="food_type">
-                <h3>Are you shopping for dry or wet food?</h3>
-                <div class="search-type flex-box">
-                    <button class="search-type-btn">Dry food</button>
-                    <button class="search-type-btn">Wet food</button>
-                    <button class="search-type-btn">Both</button>
-                </div>
-            </div>
-            <div class="search_content" id="breed_size">
-                <h3>What is your dog’s breed size?</h3>
-                <div class="search-type flex-box">
-                    <button class="search-type-btn">Small and toy (2–25 lb.)</button>
-                    <button class="search-type-btn">Medium (25–50 lb.)</button>
-                    <button class="search-type-btn">Large (50+ lb.)</button>
-                </div>
-            </div>
-            <div class="search_content" id="special_need">
-                <h3>Does your dog have any specific needs?</h3>
-                <div class="search-type flex-box">
-                    <button class="search-type-btn" onclick="showContent(event, 'product_list')">Weight management</button>
-                    <button class="search-type-btn">Skin & coat sensitivities</button>
-                    <button class="search-type-btn">Digestive sensitivities</button>
-                    <button class="search-type-btn">Mobility health</button>
-                    <button class="search-type-btn">Dental</button>
-                    <button class="search-type-btn">None</button>
-                </div>
-            </div>
-            <!-- Product List -->
-            <div class="search_content" id="product_list">
-                <h3>We found 4 products that fit your needs.</h3>
-                <div class="search-type flex-box products-wrapper">
-                    <a href="" class="flex-box">
-                        <img src="img/dog_images_hills/citrus_hills_dog_1213032.png" alt="Product Image">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="cta-underline">Buy Now</div>
-                    </a>
-                    <a href="" class="flex-box">
-                        <img src="img/dog_images_hills/citrus_hills_dog_1213059.png" alt="Product Image">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="cta-underline">Buy Now</div>
-                    </a>
-                    <a href="" class="flex-box">
-                        <img src="img/dog_images_hills/citrus_hills_dog_1309897.png" alt="Product Image">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="cta-underline">Buy Now</div>
-                    </a>
-                    <a href="" class="flex-box">
-                        <img src="img/dog_images_hills/citrus_hills_dog_1309900.png" alt="Product Image">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="cta-underline">Buy Now</div>
-                    </a>
-                </div>
-            </div>
         </div>
-    </div>
 
     </div>
 </div>
