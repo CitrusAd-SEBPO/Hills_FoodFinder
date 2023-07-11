@@ -93,7 +93,7 @@
   /* Breadcrumb */
   .citrus_petco_hills_modal-content .hills_modals_bread{
     gap: 20px;
-    padding: 40px 0;
+    padding: 40px 0 0;
     align-items: flex-start;
   }
   .hills_modals_bread .bread__container{
@@ -143,7 +143,7 @@
     color: #00205B;
     font-size: 22px;
     font-family: "PetcoCircularTT-Bold", arial !important;
-    padding: 0 15px 40px;
+    padding: 40px 15px;
     text-align: center;
     margin: 0;
   }

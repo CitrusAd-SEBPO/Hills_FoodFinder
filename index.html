@@ -90,7 +90,6 @@
   <script>
     const animals = [
         {
-          question : "Which type of pet do you have?",
           title : "cat",
           breadcrumb : "Pet Specifies",
           items : [
@@ -601,8 +600,8 @@
 
           finder_wrapper += `<div class="citrus_petco_hills_modal-body">`;
             finder_wrapper += `<div class="search_content" id="pet_species">`;
-          
-          finder_wrapper += `<h3>${animal.question}</h3>`;
+              finder_wrapper += `<h3>Which type of pet do you have?</h3>`;
+          finder_wrapper += `<h3>${animal.title}</h3>`;
           finder_wrapper += "<ul>";
             animal.items.forEach((year) => {
               console.log(year);
