@@ -1,742 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="common.css">
-<link rel="stylesheet" href="font.css">
-<link rel="stylesheet" href="modal.css">
-<link rel="stylesheet" href="tab.css">
-</head>
-<body>
 
-<h3>Test product list</h3>
-  <p id="test_list"></p>
 
-
-  <div class="citrus_hills" id="citrus_hills">
-    <!-- The citrus petco hills modal  -->
-    <button id="findFood">Open Food Finder</button>
-
-    <div id="citrus_petco_hills_modal" class="citrus_petco_hills_modal">
-
-        <div class="citrus_petco_hills_modal-content">
-            <span class="close">&times;</span>
-            <div class="hills_modals_header flex-box">
-                <div class="hills_modals_header__logo">
-                    <img src="img/citrus_hills_logo.png" alt="Hill’s logo. Science did that.">
-                </div>
-                <h2>Find the right food for your pet</h2>
-            </div>
-            <div id="content_wrapper">
-              <div class="content_wrapper__content">
-
-              </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-  <!-- <ul>
-   <button>Pet Specifies</button>
-    
-    <li>Cat</li>
-      <ul>
-        <li>0-1 year</li>
-        <ul>
-          <li>dry</li>
-          <ul>
-            <li>Small</li>
-            <ul>
-              <li>Weight Management</li>
-              <ul>
-                <li>Items</li>
-                <li>Items2</li>
-              </ul>
-              <li>Dental</li>
-              <ul>
-                <li>Items3</li>
-                <li>Items4</li>
-              </ul>
-            </ul>
-            <li>Medium</li>
-            <ul>
-              <li>Weight Management1</li>
-              <ul>
-                <li>Items5</li>
-                <li>Items6</li>
-              </ul>
-              <li>Dental</li>
-              <ul>
-                <li>Items7</li>
-                <li>Items8</li>
-              </ul>
-            </ul>
-          </ul>
-          <li>Wet</li>
-        </ul>
-        <li>1-6 years</li>
-      </ul>
-  </ul> -->
-
-  
-
-
-
-
-  <script>
-    const animals = [
-        {
-          title : "cat",
-          breadcrumb : "Pet Specifies",
-          items : [
-          {
-              title : "0-1 year",
-              breadcrumb : "Year Range",
-              items : [
-                {
-                    title : "dry",
-                    breadcrumb : "Food Type",
-                    items : [
-                      {
-                        title : "Small and toy (2–25 lb.)",
-                        breadcrumb : "Breed Size",
-                        items : [
-                          {
-                            title : "weightManagement",
-                            breadcrumb : "special Notes",
-                            items : [
-                              {
-                                title : "Product one",
-                                img : "sku.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now",
-                                size : "small/Medium/"
-
-                              },
-                              {
-                                title : "Product Two",
-                                img : "img2.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              },
-                              {
-                                title : "Product Three",
-                                img : "img3.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              },
-                              {
-                                title : "Product Four",
-                                img : "img4.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                }
-              ]
-            },
-
-            {
-              title : "1-6 years",
-              breadcrumb : "Year Range",
-              items : [
-                {
-                    title : "dry",
-                    breadcrumb : "Food Type",
-                    items : [
-                      {
-                        title : "Small and toy (2–25 lb.)",
-                        breadcrumb : "Breed Size",
-                        items : [
-                          {
-                            title : "weightManagement",
-                            breadcrumb : "Special Notes",
-                            items : [
-                              {
-                                title : "Product one",
-                                img : "sku.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now",
-                                size : "small/Medium/"
-
-                              },
-                              {
-                                title : "Product Two",
-                                img : "img2.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              },
-                              {
-                                title : "Product Three",
-                                img : "img3.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                }
-              ]
-            },]
-        },
-      
-        {
-          img : "src.png",
-          title : "dog",
-          breadcrumb : "Pet Specifies",
-          items : [
-          {
-              title : "0-1 year",
-              breadcrumb : "Year Range",
-              items : [
-                {
-                    title : "dry",
-                    breadcrumb : "Food Type",
-                    items : [
-                      {
-                        title : "Small and toy (2–25 lb.)",
-                        breadcrumb : "Breed Size",
-                        items : [
-                          {
-                            title : "weightManagement",
-                            breadcrumb : "special Notes",
-                            items : [
-                              {
-                                title : "Product one",
-                                img : "sku.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now",
-                                size : "small/Medium/"
-
-                              },
-                              {
-                                title : "Product Two",
-                                img : "img2.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              },
-                              {
-                                title : "Product Three",
-                                img : "img3.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              },
-                              {
-                                title : "Product Four",
-                                img : "img4.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                }
-              ]
-            },
-
-            {
-              title : "1-6 years",
-              breadcrumb : "Year Range",
-              items : [
-                {
-                    title : "dry",
-                    breadcrumb : "Food Type",
-                    items : [
-                      {
-                        title : "Small and toy (2–25 lb.)",
-                        breadcrumb : "Breed Size",
-                        items : [
-                          {
-                            title : "weightManagement",
-                            breadcrumb : "Special Notes",
-                            items : [
-                              {
-                                title : "Product one",
-                                img : "sku.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now",
-                                size : "small/Medium/"
-
-                              },
-                              {
-                                title : "Product Two",
-                                img : "img2.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              },
-                              {
-                                title : "Product Three",
-                                img : "img3.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                }
-              ]
-            },]
-        }
-      
-      ]
-    // Dog : Product list
-    const dog = [
-        {
-          years : [
-            {
-              title : "0-1 year",
-              items : [
-                {
-                    title : "dry",
-                    items : [
-                      {
-                        title : "Small and toy (2–25 lb.)",
-                        items : [
-                          {
-                            title : "weightManagement",
-                            items : [
-                              {
-                                title : "Product one",
-                                img : "sku.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now",
-                                size : "small/Medium/"
-
-                              },
-                              {
-                                title : "Product Two",
-                                img : "img2.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              },
-                              {
-                                title : "Product Three",
-                                img : "img3.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              },
-                              {
-                                title : "Product Four",
-                                img : "img4.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                }
-              ]
-            },
-
-            {
-              title : "1-6 years",
-              items : [
-                {
-                    title : "dry",
-                    items : [
-                      {
-                        title : "Small and toy (2–25 lb.)",
-                        items : [
-                          {
-                            title : "weightManagement",
-                            items : [
-                              {
-                                title : "Product one",
-                                img : "sku.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now",
-                                size : "small/Medium/"
-
-                              },
-                              {
-                                title : "Product Two",
-                                img : "img2.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              },
-                              {
-                                title : "Product Three",
-                                img : "img3.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                }
-              ]
-            },
-
-            {
-              title : "7+ years",
-              items : [
-                {
-                    title : "dry",
-                    items : [
-                      {
-                        title : "Small and toy (2–25 lb.)",
-                        items : [
-                          {
-                            title : "weightManagement",
-                            items : [
-                              {
-                                title : "Product one",
-                                img : "sku.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now",
-                                size : "small/Medium/"
-
-                              },
-                              {
-                                title : "Product Two",
-                                img : "img2.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              },
-                              {
-                                title : "Product Three",
-                                img : "img3.png",
-                                link : "test.com",
-                                tagName : "tagging name",
-                                cta : "Buy Now"
-
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                }
-              ]
-            }
-
-          ],
-
-          
-        },
-   
-    ];
-    // End Dog : Product list
-
-    // CAT : Product list
-    // const cat = [
-    //     {
-    //       years : [
-    //         {
-    //           title : "0–1 year",
-    //           items : [
-    //             {
-    //                 title : "dry",
-    //                 items : [
-    //                   {
-    //                     title : "weightManagement",
-    //                     items : [
-    //                       {
-    //                         title : "Product one",
-    //                         img : "sku.png",
-    //                         link : "test.com",
-    //                         tagName : "tagging name",
-    //                         cta : "Buy Now",
-    //                         size : "small/Medium/"
-
-    //                       },
-    //                       {
-    //                         title : "Product Two",
-    //                         img : "img2.png",
-    //                         link : "test.com",
-    //                         tagName : "tagging name",
-    //                         cta : "Buy Now"
-
-    //                       },
-    //                       {
-    //                         title : "Product Three",
-    //                         img : "img3.png",
-    //                         link : "test.com",
-    //                         tagName : "tagging name",
-    //                         cta : "Buy Now"
-
-    //                       }
-    //                     ]
-    //                   }
-    //                 ]
-    //             }
-    //           ]
-    //         },
-          
-    //       ],
-    //     },
-   
-    // ]
-    // End CAT : Product list
-
-
-      let html = "<ul>";
-        animals.forEach((animal) => {
-          
-          html += `<li>${animal.title}</li>`;
-          html += "<ul>";
-            animal.items.forEach((year) => {
-              console.log(year);
-              html += `<li>${year.title}</li>`;
-              html += "<ul>";
-                year.items.forEach((type) => {
-                html += `<li>${type.title}</li>`;
-                html += "<ul>";
-                  type.items.forEach((size) => {
-                  html += `<li>${size.title}</li>`;
-                  html += "<ul>";
-                    size.items.forEach((product) => {
-                    html += `<li>${product.title}</li>`;
-                  })
-                  html += "</ul>";
-                })
-                html += "</ul>";
-              })
-              html += "</ul>";
-            })
-            html += "</ul>";
-        })
-
-
-        document.getElementById("test_list").innerHTML = html;
-
-
-
-
-
-
-// Start product listing
-    // console.log(dog[0].years[0].items[0].items[0].items[0].items);
-    // let items = dog[0].years[0].items[0].items[0].items[0].items;
-    // let dog01_items = dog[0].years[0].items[0].items[0].items[0].items.length;
-
-    // let list = "<ul>";
-    //   for (let i = 0; i < animals; i++) {
-    //     list += "<ul>" + animals[i].title;
-    //       list += "</ul>";
-    //   }
-    //   list += "</ul>";
-
-      // document.getElementById("test_list").innerHTML = list;
-
-
-    // Start year show
-    // console.log(dog[0].years);
-    // let years = dog[0].years;
-    // let itemLen = dog[0].years.length;
-
-    // let yearsDiv = "<ul>";
-    //   for (let i = 0; i < itemLen; i++) {
-    //     yearsDiv += "<li class='test1'>" + years[i].title + "</li><br>";
-    //   }
-    //   yearsDiv += "</ul>";
-
-    //   document.getElementById("year_list").innerHTML = yearsDiv;
-          
-  </script>
-
-
-  <script>
-
-        // JS with project styles
-        let finder_wrapper = "<div class='content_wrapper__content'>";
-
-        animals.forEach((animal) => {
-
-          finder_wrapper += `<div class="citrus_petco_hills_modal-body">
-           <div class="search_content" id="pet_species">`
-          finder_wrapper += `<h3>${animal.title}</h3>`;
-          finder_wrapper += "<ul>";
-            animal.items.forEach((year) => {
-              console.log(year);
-              finder_wrapper += `<li>${year.title}</li>`;
-              finder_wrapper += "<ul>";
-                year.items.forEach((type) => {
-                  finder_wrapper += `<li>${type.title}</li>`;
-                  finder_wrapper += "<ul>";
-                  type.items.forEach((size) => {
-                    finder_wrapper += `<li>${size.title}</li>`;
-                    finder_wrapper += "<ul>";
-                    size.items.forEach((product) => {
-                      finder_wrapper += `<li>${product.title}</li>`;
-                  })
-                  finder_wrapper += "</ul>";
-                })
-                finder_wrapper += "</ul>";
-              })
-              finder_wrapper += `</div class="search_content" id="pet_species">`;
-              finder_wrapper += `</div class="citrus_petco_hills_modal-body">`;
-            })
-            finder_wrapper += "<div class='content_wrapper__content'>";
-        })
-
-
-        document.getElementById("content_wrapper").innerHTML = finder_wrapper;
-
-
-        // Show Modals on a link
-      if (window.location.pathname === "/Hills_FoodFinder/index.html")
-
-      document.getElementById('citrus_petco_hills_modal').setAttribute('style', 'display: block !important');
-
-      document.getElementById('citrus_petco_hills_modal').style.setProperty('display', 'block', 'important');
-  </script>
-
-
-<script>
-  
-  `<div class="content-wrapper">
-    <div class="hills_modals_bread flex-box">
-                <div class="bread__container flex-box">
-                    <button class="bread_btn" onclick="showContent(event, 'pet_species')" id="defaultOpen">Pet Species</button>
-                    <button class="bread_btn" onclick="showContent(event, 'year_range')">Year Range</button>
-                    <button class="bread_btn" onclick="showContent(event, 'food_type')">Food Type</button>
-                    <button class="bread_btn" onclick="showContent(event, 'breed_size')">Breed Size</button>
-                    <button class="bread_btn" onclick="showContent(event, 'special_need')">Special Need</button>
-                </div>
-                <button class="reset-search" onclick="showContent(event, 'pet_species')">Start Over</button>
-            </div>
-            <div class="citrus_petco_hills_modal-body">
-                <div class="search_content" id="pet_species">
-                    <h3>Which type of pet do you have?</h3>
-                    <div class="search-type">
-                        <div class="chose-pet flex-box">
-                            <a href="" class="flex-box">
-                                <img src="img/citrus-hills-cat.png" alt="">
-                                <button>Cat</button>
-                            </a>
-                            <span>OR</span>
-                            <a href="" class="flex-box">
-                                <img src="img/citrus-hills-dog.png" alt="">
-                                <button>Dog</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="search_content" id="year_range">
-                    <h3>How old is your dog?</h3>
-                    <div class="search-type flex-box">
-                        <button class="search-type-btn">0–1 year</button>
-                        <button class="search-type-btn">1–6 years</button>
-                        <button class="search-type-btn">7+ years</button>
-                    </div>
-                </div>
-                <div class="search_content" id="food_type">
-                    <h3>Are you shopping for dry or wet food?</h3>
-                    <div class="search-type flex-box">
-                        <button class="search-type-btn">Dry food</button>
-                        <button class="search-type-btn">Wet food</button>
-                        <button class="search-type-btn">Both</button>
-                    </div>
-                </div>
-                <div class="search_content" id="breed_size">
-                    <h3>What is your dog’s breed size?</h3>
-                    <div class="search-type flex-box">
-                        <button class="search-type-btn">Small and toy (2–25 lb.)</button>
-                        <button class="search-type-btn">Medium (25–50 lb.)</button>
-                        <button class="search-type-btn">Large (50+ lb.)</button>
-                    </div>
-                </div>
-                <div class="search_content" id="special_need">
-                    <h3>Does your dog have any specific needs?</h3>
-                    <div class="search-type flex-box">
-                        <button class="search-type-btn" onclick="showContent(event, 'product_list')">Weight management</button>
-                        <button class="search-type-btn">Skin & coat sensitivities</button>
-                        <button class="search-type-btn">Digestive sensitivities</button>
-                        <button class="search-type-btn">Mobility health</button>
-                        <button class="search-type-btn">Dental</button>
-                        <button class="search-type-btn">None</button>
-                    </div>
-                </div>
-                <!-- Product List -->
-                <div class="search_content" id="product_list">
-                    <h3>We found 4 products that fit your needs.</h3>
-                    <div class="search-type flex-box products-wrapper">
-                        <a href="" class="flex-box">
-                            <img src="img/dog/citrus_hills_dog_1213032.png" alt="Product Image">
-                            <p>Product Name and Description Goes Here</p>
-                            <div class="cta-underline">Buy Now</div>
-                        </a>
-                        <a href="" class="flex-box">
-                            <img src="img/dog/citrus_hills_dog_1213059.png" alt="Product Image">
-                            <p>Product Name and Description Goes Here</p>
-                            <div class="cta-underline">Buy Now</div>
-                        </a>
-                        <a href="" class="flex-box">
-                            <img src="img/dog/citrus_hills_dog_1309897.png" alt="Product Image">
-                            <p>Product Name and Description Goes Here</p>
-                            <div class="cta-underline">Buy Now</div>
-                        </a>
-                        <a href="" class="flex-box">
-                            <img src="img/dog/citrus_hills_dog_1309900.png" alt="Product Image">
-                            <p>Product Name and Description Goes Here</p>
-                            <div class="cta-underline">Buy Now</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-  </div>`
-</script>
-
-
-<script>
     const animals = [
       // All Dogs SKU'S
         {
@@ -1360,8 +623,200 @@
                     ]
                   },
 
-                  //   Medium NONE
+                  //   Medium WEIGHT
                   {
+                    title : "Medium (25–50 lb.)",
+                    breadcrumb : "Breed Size",
+                    items : [
+                      {
+                        title : "weight",
+                        breadcrumb : "special Notes",
+                        items : [
+                          {
+                            id : 1,
+                            title : "Hill's Science Diet Adult Perfect Weight Chicken Recipe Dry Dog Food, 4 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2279261.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-perfect-weight-adult-dog-food-4-lbs-2279261",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 2,
+                            title : "Hill's Science Diet Adult Perfect Weight Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2279316.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-perfect-weight-adult-dog-food-15-lbs-2279316",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 3,
+                            title : "Hill's Science Diet Adult Perfect Weight Small Bites Chicken Recipe Dry Dog Food, 4 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148764.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-perfect-weight-small-bites-chicken-recipe-dry-dog-food-4-lbs-bag-3148764",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 4,
+                            title : "Hill's Science Diet Adult Perfect Weight Small Bites Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148781.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-perfect-weight-small-bites-chicken-recipe-dry-dog-food-15-lbs-bag-3148781",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                        ]
+                      }
+                    ]
+                  },
+
+                   //   Medium SKIN
+                   {
+                    title : "Medium (25–50 lb.)",
+                    breadcrumb : "Breed Size",
+                    items : [
+                      {
+                        title : "skin",
+                        breadcrumb : "special Notes",
+                        items : [
+                          {
+                            id : 1,
+                            title : "Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food, 4 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2463560.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-sensitive-stomach-and-skin-adult-dry-dog-food-4-lbs-2463560",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 2,
+                            title : "Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food, 15.5 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_1327755.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-sensitive-stomach-and-skin-adult-dog-food-155-lbs-1327755",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 3,
+                            title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small Bites Chicken Recipe Dry Dog Food, 4 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148772.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-and-skin-small-bites-chicken-recipe-dry-dog-food-4-lbs-bag-3148772",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 4,
+                            title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small Bites Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148799.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-and-skin-small-bites-chicken-recipe-dry-dog-food-15-lbs-bag-3148799",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                        ]
+                      }
+                    ]
+                  },
+
+                   //   Medium DIGESTIVE
+                   {
+                    title : "Medium (25–50 lb.)",
+                    breadcrumb : "Breed Size",
+                    items : [
+                      {
+                        title : "digestive",
+                        breadcrumb : "special Notes",
+                        items : [
+                          {
+                            id : 1,
+                            title : "Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food, 15.5 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_1327755.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-sensitive-stomach-and-skin-adult-dog-food-155-lbs-1327755",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 2,
+                            title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small Bites Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148799.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-and-skin-small-bites-chicken-recipe-dry-dog-food-15-lbs-bag-3148799",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 3,
+                            title : "Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food, 4 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2463560.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-sensitive-stomach-and-skin-adult-dry-dog-food-4-lbs-2463560",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 4,
+                            title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small Bites Chicken Recipe Dry Dog Food, 4 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148772.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-and-skin-small-bites-chicken-recipe-dry-dog-food-4-lbs-bag-3148772",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                        ]
+                      }
+                    ]
+                  },
+
+                   //   Medium MOBILITY
+                   {
+                    title : "Medium (25–50 lb.)",
+                    breadcrumb : "Breed Size",
+                    items : [
+                      {
+                        title : "mobility",
+                        breadcrumb : "special Notes",
+                        items : [
+                          {
+                            id : 1,
+                            title : "Hill's Science Diet Adult Healthy Mobility Small Bites Chicken Meal, Brown Rice & Barley Recipe Dry Dog Food, 4 lbs.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2463543.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-healthy-mobility-small-bites-adult-dog-food-4-lbs-2463543",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 2,
+                            title : "Hill's Science Diet Adult Healthy Mobility Small Bites Chicken Meal, Brown Rice & Barley Recipe Dry Dog Food, 15.5 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_1339575.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-healthy-mobility-small-bites-adult-dog-food-155-lbs-1339575",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          
+                        ]
+                      }
+                    ]
+                  },
+
+                   //   Medium DENTAL
+                   {
+                    title : "Medium (25–50 lb.)",
+                    breadcrumb : "Breed Size",
+                    items : [
+                      {
+                        title : "dental",
+                        breadcrumb : "special Notes",
+                        items : [
+                          {
+                            id : 1,
+                            title : "Hill's Science Diet Adult Oral Care Chicken, Rice & Barley Recipe Dry Dog Food, 4 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_802751.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-oral-care-adult-dog-food-4-lbs-802751",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          
+                        ]
+                      }
+                    ]
+                  },
+
+                   //   Medium NONE
+                   {
                     title : "Medium (25–50 lb.)",
                     breadcrumb : "Breed Size",
                     items : [
@@ -1371,33 +826,33 @@
                         items : [
                           {
                             id : 1,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
+                            title : "Hill's Science Diet Adult Small Bites with Chicken & Barley Recipe Dry Dog Food, 15 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987195.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-small-bites-with-chicken-and-barley-recipe-dry-dog-food-15-lbs-bag-2987195",
                             tagName : "TagName",
                             cta : "Buy Now",
                           },
                           {
                             id : 2,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
+                            title : "Hill's Science Diet Adult Chicken & Barley Recipe Dry Dog Food, 15 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987099.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-chicken-and-barley-recipe-dry-dog-food-15-lbs-bag-2987099",
                             tagName : "TagName",
                             cta : "Buy Now",
                           },
                           {
                             id : 3,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
+                            title : "Hill's Science Diet Adult Small Bites Chicken & Barley Recipe Dry Dog Food, 5 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_735493.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-advanced-fitness-small-bites-adult-dog-food-5-lbs-735493",
                             tagName : "TagName",
                             cta : "Buy Now",
                           },
                           {
                             id : 4,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
+                            title : "Hill's Science Diet Adult Small Bites Lamb Meal & Brown Rice Recipe Dry Dog Food, 15.5 lbs.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_1327682.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-advanced-fitness-small-bites-lamb-meal-and-rice-adult-dog-food-155-lbs-1327682",
                             tagName : "TagName",
                             cta : "Buy Now",
                           },
@@ -1508,36 +963,28 @@
                           items : [
                             {
                               id : 1,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
+                              title : "Hill's Science Diet Adult Sensitive Stomach & Skin Salmon & Vegetable Entree Canned Dog Food, 12.8 oz.",
+                              img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2276916.png",
+                              link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-grain-free-salmon-entree-canned-adult-dog-food-case-of-12-2276916",
                               tagName : "TagName",
                               cta : "Buy Now",
                             },
                             {
                               id : 2,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
+                              title : "Hill's Science Diet Adult Sensitive Stomach, Skin Chicken & Vegetable Entree Canned Dog Food, 12.8 oz.",
+                              img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987161.png",
+                              link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-chicken-and-vegetable-entree-canned-dog-food-128-oz-2987161",
                               tagName : "TagName",
                               cta : "Buy Now",
                             },
                             {
                               id : 3,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
+                              title : "Hill's Science Diet Adult Sensitive Stomach, Skin Tender Turkey & Rice Stew Canned Dog Food, 12.5 oz.",
+                              img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987179.png",
+                              link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-tender-turkey-and-rice-stew-canned-dog-food-125-oz-2987179",
                               tagName : "TagName",
                               cta : "Buy Now",
-                            },
-                            {
-                              id : 4,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
+                            }
                           ]
                         }
                       ]
@@ -1554,132 +1001,33 @@
                           items : [
                             {
                               id : 1,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
+                              title : "Hill's Science Diet Adult Sensitive Stomach & Skin Salmon & Vegetable Entree Canned Dog Food, 12.8 oz.",
+                              img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2276916.png",
+                              link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-grain-free-salmon-entree-canned-adult-dog-food-case-of-12-2276916",
                               tagName : "TagName",
                               cta : "Buy Now",
                             },
                             {
                               id : 2,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
+                              title : "Hill's Science Diet Adult Sensitive Stomach, Skin Chicken & Vegetable Entree Canned Dog Food, 12.8 oz.",
+                              img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987161.png",
+                              link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-chicken-and-vegetable-entree-canned-dog-food-128-oz-2987161",
                               tagName : "TagName",
                               cta : "Buy Now",
                             },
                             {
                               id : 3,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
+                              title : "Hill's Science Diet Adult Sensitive Stomach, Skin Tender Turkey & Rice Stew Canned Dog Food, 12.5 oz.",
+                              img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987179.png",
+                              link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-tender-turkey-and-rice-stew-canned-dog-food-125-oz-2987179",
                               tagName : "TagName",
                               cta : "Buy Now",
-                            },
-                            {
-                              id : 4,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
+                            }
                           ]
                         }
                       ]
                     },
 
-                    //  Small MOBILITY
-                    {
-                      title : "Small and toy (2–25 lb.)",
-                      breadcrumb : "Breed Size",
-                      items : [
-                        {
-                          title : "mobility",
-                          breadcrumb : "special Notes",
-                          items : [
-                            {
-                              id : 1,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                            {
-                              id : 2,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                            {
-                              id : 3,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                            {
-                              id : 4,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                          ]
-                        }
-                      ]
-                    },
-
-                    //  Small DENTAL
-                    {
-                      title : "Small and toy (2–25 lb.)",
-                      breadcrumb : "Breed Size",
-                      items : [
-                        {
-                          title : "dental",
-                          breadcrumb : "special Notes",
-                          items : [
-                            {
-                              id : 1,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                            {
-                              id : 2,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                            {
-                              id : 3,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                            {
-                              id : 4,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                          ]
-                        }
-                      ]
-                    },
 
                     //  Small NONE
                     {
@@ -1692,33 +1040,33 @@
                           items : [
                             {
                               id : 1,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
+                              title : "Hill's Science Diet Adult Small Paws Chicken & Barley Entree Canned Dog Food, 5.8 oz.",
+                              img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_992682.png",
+                              link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-savory-chicken-entree-canned-dog-food-992682",
                               tagName : "TagName",
                               cta : "Buy Now",
                             },
                             {
                               id : 2,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
+                              title : "Hill's Science Diet Adult Beef & Barley Entree Canned Dog Food, 13 oz.",
+                              img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_654434.png",
+                              link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-gourmet-beef-entree-canned-dog-food-654434",
                               tagName : "TagName",
                               cta : "Buy Now",
                             },
                             {
                               id : 3,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
+                              title : "Hill's Science Diet Adult Chicken & Barley Entree Canned Dog Food, 13 oz.",
+                              img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_654353.png",
+                              link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-savory-chicken-entree-canned-dog-food-654353",
                               tagName : "TagName",
                               cta : "Buy Now",
                             },
                             {
                               id : 4,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
+                              title : "Hill's Science Diet Adult Savory Stew with Beef & Vegetables Canned Dog Food, 12.8 oz.",
+                              img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_393495.png",
+                              link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-savory-stew-with-beef-and-vegetables-adult-canned-dog-food-128-oz-case-of-12-393495",
                               tagName : "TagName",
                               cta : "Buy Now",
                             },
@@ -1727,51 +1075,159 @@
                       ]
                     },
 
+                  //   Medium WEIGHT
+                  {
+                    title : "Medium (25–50 lb.)",
+                    breadcrumb : "Breed Size",
+                    items : [
+                      {
+                        title : "weight",
+                        breadcrumb : "special Notes",
+                        items : [
+                          {
+                            id : 1,
+                            title : "Hill's Science Diet Adult Perfect Weight Hearty Vegetable & Chicken Stew Canned Dog Food, 12.5 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2516449.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-perfect-weight-hearty-vegetable-and-chicken-stew-adult-wet-dog-food-125-oz-2516449",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 2,
+                            title : "Hill's Science Diet Adult Perfect Weight Chicken & Vegetable Entree Canned Dog Food, 12.8 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2276908.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-perfect-weight-chicken-and-vegetables-canned-adult-dog-food-case-of-12-2276908",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          
+                        ]
+                      }
+                    ]
+                  },
+
+                  //   Medium SKIN
+                  {
+                    title : "Medium (25–50 lb.)",
+                    breadcrumb : "Breed Size",
+                    items : [
+                      {
+                        title : "skin",
+                        breadcrumb : "special Notes",
+                        items : [
+                          {
+                            id : 1,
+                            title : "Hill's Science Diet Adult Sensitive Stomach, Skin Chicken & Vegetable Entree Canned Dog Food, 12.8 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987161.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-chicken-and-vegetable-entree-canned-dog-food-128-oz-2987161",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 2,
+                            title : "Hill's Science Diet Adult Sensitive Stomach, Skin Tender Turkey & Rice Stew Canned Dog Food, 12.5 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987179.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-tender-turkey-and-rice-stew-canned-dog-food-125-oz-2987179",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 3,
+                            title : "Hill's Science Diet Adult Sensitive Stomach & Skin Salmon & Vegetable Entree Canned Dog Food, 12.8 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2276916.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-grain-free-salmon-entree-canned-adult-dog-food-case-of-12-2276916",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          
+                        ]
+                      }
+                    ]
+                  },
+
+                  //   Medium DIGESTIVE
+                  {
+                    title : "Medium (25–50 lb.)",
+                    breadcrumb : "Breed Size",
+                    items : [
+                      {
+                        title : "digestive",
+                        breadcrumb : "special Notes",
+                        items : [
+                          {
+                            id : 1,
+                            title : "Hill's Science Diet Adult Sensitive Stomach, Skin Chicken & Vegetable Entree Canned Dog Food, 12.8 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987161.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-chicken-and-vegetable-entree-canned-dog-food-128-oz-2987161",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 2,
+                            title : "Hill's Science Diet Adult Sensitive Stomach, Skin Tender Turkey & Rice Stew Canned Dog Food, 12.5 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987179.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-tender-turkey-and-rice-stew-canned-dog-food-125-oz-2987179",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 3,
+                            title : "Hill's Science Diet Adult Sensitive Stomach & Skin Salmon & Vegetable Entree Canned Dog Food, 12.8 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2276916.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-grain-free-salmon-entree-canned-adult-dog-food-case-of-12-2276916",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                        ]
+                      }
+                    ]
+                  },
+
                   //   Medium NONE
                   {
-                      title : "Medium (25–50 lb.)",
-                      breadcrumb : "Breed Size",
-                      items : [
-                        {
-                          title : "none",
-                          breadcrumb : "special Notes",
-                          items : [
-                            {
-                              id : 1,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                            {
-                              id : 2,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                            {
-                              id : 3,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                            {
-                              id : 4,
-                              title : "ProductsName",
-                              img : "ImageLink",
-                              link : "ProductLink",
-                              tagName : "TagName",
-                              cta : "Buy Now",
-                            },
-                          ]
-                        }
-                      ]
-                    },
+                    title : "Medium (25–50 lb.)",
+                    breadcrumb : "Breed Size",
+                    items : [
+                      {
+                        title : "none",
+                        breadcrumb : "special Notes",
+                        items : [
+                          {
+                            id : 1,
+                            title : "Hill's Science Diet Adult Beef & Barley Entree Canned Dog Food, 13 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_654434.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-gourmet-beef-entree-canned-dog-food-654434",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 2,
+                            title : "Hill's Science Diet Adult Chicken & Barley Entree Canned Dog Food, 13 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_654353.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-savory-chicken-entree-canned-dog-food-654353",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 3,
+                            title : "Hill's Science Diet Adult Savory Stew with Chicken & Vegetables Canned Dog Food, 12.8 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_393240.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-savory-stew-with-chicken-and-vegetables-adult-canned-dog-food-128-oz-case-of-12-393240",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                          {
+                            id : 4,
+                            title : "Hill's Science Diet Adult Savory Stew with Beef & Vegetables Canned Dog Food, 12.8 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_393495.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-savory-stew-with-beef-and-vegetables-adult-canned-dog-food-128-oz-case-of-12-393495",
+                            tagName : "TagName",
+                            cta : "Buy Now",
+                          },
+                        ]
+                      }
+                    ]
+                  },
                   
                     //   Large NONE
                   {
@@ -1826,44 +1282,44 @@
                 title : "both",
                 breadcrumb : "Food Type",
                 items : [   
-                    //  Small NONE
+                    //  Small WEIGHT
                   {
                     title : "Small and toy (2–25 lb.)",
                     breadcrumb : "Breed Size",
                     items : [
                       {
-                        title : "none",
+                        title : "weight",
                         breadcrumb : "special Notes",
                         items : [
                           {
                             id : 1,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
+                            title : "Hill's Science Diet Adult Perfect Weight Small & Mini Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2392491.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-perfect-weight-small-and-toy-breed-adult-dog-food-15-lbs-2392491",
                             tagName : "TagName",
                             cta : "Buy Now",
                           },
                           {
                             id : 2,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
+                            title : "Hill's Science Diet Adult Perfect Weight Hearty Vegetable & Chicken Stew Canned Dog Food, 12.5 oz.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2516449.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-perfect-weight-hearty-vegetable-and-chicken-stew-adult-wet-dog-food-125-oz-2516449",
                             tagName : "TagName",
                             cta : "Buy Now",
                           },
                           {
                             id : 3,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
+                            title : "Hill's Science Diet Adult Perfect Weight Small Bites Chicken Recipe Dry Dog Food, 15 lbs.",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148781.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-perfect-weight-small-bites-chicken-recipe-dry-dog-food-15-lbs-bag-3148781",
                             tagName : "TagName",
                             cta : "Buy Now",
                           },
                           {
                             id : 4,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
+                            title : "Hill's Science Diet Adult Perfect Weight Small & Mini Chicken Recipe Dry Dog Food, 4 lbs., Bag",
+                            img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2392482.png",
+                            link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-perfect-weight-small-and-toy-breed-adult-dog-food-4-lbs-2392482",
                             tagName : "TagName",
                             cta : "Buy Now",
                           },
@@ -1872,99 +1328,487 @@
                     ]
                   },
 
+                  //   Small SKIN
+                {
+                  title : "Small and toy (2–25 lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "skin",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "Hill's Science Diet Adult Sensitive Stomach, Skin Tender Turkey & Rice Stew Canned Dog Food, 12.5 oz.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987179.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-tender-turkey-and-rice-stew-canned-dog-food-125-oz-2987179",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 2,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small & Mini Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2517943.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills--science-diet--adult-sensitive-stomach-and-skin-small-and-toy-breed-dog-food-15-lb-bag-2517943",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 3,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small Bites Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148799.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-and-skin-small-bites-chicken-recipe-dry-dog-food-15-lbs-bag-3148799",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 4,
+                          title : "Hill's Science Diet Adult Sensitive Stomach, Skin Chicken & Vegetable Entree Canned Dog Food, 12.8 oz.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987161.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-chicken-and-vegetable-entree-canned-dog-food-128-oz-2987161",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 5,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small & Mini Chicken Recipe Dry Dog Food, 4 lbs.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2517951.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills--science-diet--adult-sensitive-stomach-and-skin-small-and-toy-breed-dog-food-4-lb-bag-2517951",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                      ]
+                    }
+                  ]
+                },
+
+                //   Small DIGESTIVE
+                {
+                  title : "Large (50+ lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "digestive",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "Hill's Science Diet Adult Sensitive Stomach, Skin Tender Turkey & Rice Stew Canned Dog Food, 12.5 oz.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987179.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-tender-turkey-and-rice-stew-canned-dog-food-125-oz-2987179",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 2,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small & Mini Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2517943.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills--science-diet--adult-sensitive-stomach-and-skin-small-and-toy-breed-dog-food-15-lb-bag-2517943",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 3,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small Bites Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148799.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-and-skin-small-bites-chicken-recipe-dry-dog-food-15-lbs-bag-3148799",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 4,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small & Mini Chicken Recipe Dry Dog Food, 4 lbs.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2517951.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills--science-diet--adult-sensitive-stomach-and-skin-small-and-toy-breed-dog-food-4-lb-bag-2517951",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                      ]
+                    }
+                  ]
+                },
+
+                //   Small MOBILITY
+                {
+                  title : "Large (50+ lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "mobility",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "Hill's Science Diet Adult Healthy Mobility Small Bites Chicken Meal, Brown Rice & Barley Recipe Dry Dog Food, 4 lbs.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2463543.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-healthy-mobility-small-bites-adult-dog-food-4-lbs-2463543",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        }
+                      ]
+                    }
+                  ]
+                },
+
+                //   Small DENTAL
+                {
+                  title : "Large (50+ lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "dental",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "Hill's Science Diet Adult Oral Care Chicken, Rice & Barley Recipe Dry Dog Food, 4 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_802751.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-oral-care-adult-dog-food-4-lbs-802751",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        }
+                      ]
+                    }
+                  ]
+                },
+
+                //   Small NONE
+                {
+                  title : "Large (50+ lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "none",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "Hill's Science Diet Adult Small Paws Chicken Meal & Rice Recipe Dry Dog Food, 15.5 lbs.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_1309935.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-small-and-toy-breed-adult-dog-food-155-lbs-1309935",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 2,
+                          title : "Hill's Science Diet Adult Small Bites with Chicken & Barley Recipe Dry Dog Food, 15 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987195.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-small-bites-with-chicken-and-barley-recipe-dry-dog-food-15-lbs-bag-2987195",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 3,
+                          title : "Hill's Science Diet Adult Small Paws Chicken Meal & Rice Recipe Dry Dog Food, 4.5 lbs.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_1309897.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-small-and-toy-breed-adult-dog-food-45-lbs-1309897",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 4,
+                          title : "Hill's Science Diet Adult Small Paws Chicken & Barley Entree Canned Dog Food, 5.8 oz.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_992682.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-savory-chicken-entree-canned-dog-food-992682",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                      ]
+                    }
+                  ]
+                },
+
+                //   Medium WEIGHT
+                {
+                  title : "Medium (25–50 lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "weight",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "Hill's Science Diet Adult Perfect Weight Chicken Recipe Dry Dog Food, 4 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2279261.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-perfect-weight-adult-dog-food-4-lbs-2279261",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 2,
+                          title : "Hill's Science Diet Adult Perfect Weight Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2279316.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-perfect-weight-adult-dog-food-15-lbs-2279316",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 3,
+                          title : "Hill's Science Diet Adult Perfect Weight Small Bites Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148781.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-perfect-weight-small-bites-chicken-recipe-dry-dog-food-15-lbs-bag-3148781",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 4,
+                          title : "Hill's Science Diet Adult Perfect Weight Hearty Vegetable & Chicken Stew Canned Dog Food, 12.5 oz.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2516449.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-perfect-weight-hearty-vegetable-and-chicken-stew-adult-wet-dog-food-125-oz-2516449",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                      ]
+                    }
+                  ]
+                },
+
+                //   Medium SKIN
+                {
+                  title : "Medium (25–50 lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "skin",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food, 4 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2463560.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-sensitive-stomach-and-skin-adult-dry-dog-food-4-lbs-2463560",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 2,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food, 15.5 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_1327755.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-sensitive-stomach-and-skin-adult-dog-food-155-lbs-1327755",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 3,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small Bites Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148799.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-and-skin-small-bites-chicken-recipe-dry-dog-food-15-lbs-bag-3148799",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 4,
+                          title : "Hill's Science Diet Adult Sensitive Stomach, Skin Tender Turkey & Rice Stew Canned Dog Food, 12.5 oz.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987179.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-tender-turkey-and-rice-stew-canned-dog-food-125-oz-2987179",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                      ]
+                    }
+                  ]
+                },
+
+                //   Medium DIGESTIVE
+                {
+                  title : "Medium (25–50 lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "digestive",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food, 15.5 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_1327755.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-sensitive-stomach-and-skin-adult-dog-food-155-lbs-1327755",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 2,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Small Bites Chicken Recipe Dry Dog Food, 15 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_3148799.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-and-skin-small-bites-chicken-recipe-dry-dog-food-15-lbs-bag-3148799",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 3,
+                          title : "Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food, 4 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2463560.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-sensitive-stomach-and-skin-adult-dry-dog-food-4-lbs-2463560",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 4,
+                          title : "Hill's Science Diet Adult Sensitive Stomach, Skin Tender Turkey & Rice Stew Canned Dog Food, 12.5 oz.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987179.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-sensitive-stomach-skin-tender-turkey-and-rice-stew-canned-dog-food-125-oz-2987179",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                      ]
+                    }
+                  ]
+                },
+
+                //   Medium MOBILITY
+                {
+                  title : "Medium (25–50 lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "mobility",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "Hill's Science Diet Adult Healthy Mobility Small Bites Chicken Meal, Brown Rice & Barley Recipe Dry Dog Food, 4 lbs.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2463543.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-healthy-mobility-small-bites-adult-dog-food-4-lbs-2463543",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 2,
+                          title : "Hill's Science Diet Adult Healthy Mobility Small Bites Chicken Meal, Brown Rice & Barley Recipe Dry Dog Food, 15.5 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_1339575.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-healthy-mobility-small-bites-adult-dog-food-155-lbs-1339575",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        
+                      ]
+                    }
+                  ]
+                },
+
+                //   Medium DENTAL
+                {
+                  title : "Medium (25–50 lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "dental",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "Hill's Science Diet Adult Oral Care Chicken, Rice & Barley Recipe Dry Dog Food, 4 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_802751.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-oral-care-adult-dog-food-4-lbs-802751",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        
+                      ]
+                    }
+                  ]
+                },
+
                 //   Medium NONE
                 {
-                    title : "Medium (25–50 lb.)",
-                    breadcrumb : "Breed Size",
-                    items : [
-                      {
-                        title : "none",
-                        breadcrumb : "special Notes",
-                        items : [
-                          {
-                            id : 1,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
-                            tagName : "TagName",
-                            cta : "Buy Now",
-                          },
-                          {
-                            id : 2,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
-                            tagName : "TagName",
-                            cta : "Buy Now",
-                          },
-                          {
-                            id : 3,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
-                            tagName : "TagName",
-                            cta : "Buy Now",
-                          },
-                          {
-                            id : 4,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
-                            tagName : "TagName",
-                            cta : "Buy Now",
-                          },
-                        ]
-                      }
-                    ]
-                  },
+                  title : "Medium (25–50 lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "none",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "Hill's Science Diet Adult Small Bites with Chicken & Barley Recipe Dry Dog Food, 15 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987195.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-small-bites-with-chicken-and-barley-recipe-dry-dog-food-15-lbs-bag-2987195",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 2,
+                          title : "Hill's Science Diet Adult Chicken & Barley Recipe Dry Dog Food, 15 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_2987099.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-chicken-and-barley-recipe-dry-dog-food-15-lbs-bag-2987099",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 3,
+                          title : "Hill's Science Diet Adult Small Bites Chicken & Barley Recipe Dry Dog Food, 5 lbs., Bag",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_735493.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-advanced-fitness-small-bites-adult-dog-food-5-lbs-735493",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 4,
+                          title : "Hill's Science Diet Adult Beef & Barley Entree Canned Dog Food, 13 oz.",
+                          img : "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/dog/citrus_hills_dog_654434.png",
+                          link : "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-adult-gourmet-beef-entree-canned-dog-food-654434",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                      ]
+                    }
+                  ]
+                },
                 
-                  //   Large NONE
+                //   Large NONE
                 {
-                    title : "Large (50+ lb.)",
-                    breadcrumb : "Breed Size",
-                    items : [
-                      {
-                        title : "none",
-                        breadcrumb : "special Notes",
-                        items : [
-                          {
-                            id : 1,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
-                            tagName : "TagName",
-                            cta : "Buy Now",
-                          },
-                          {
-                            id : 2,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
-                            tagName : "TagName",
-                            cta : "Buy Now",
-                          },
-                          {
-                            id : 3,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
-                            tagName : "TagName",
-                            cta : "Buy Now",
-                          },
-                          {
-                            id : 4,
-                            title : "ProductsName",
-                            img : "ImageLink",
-                            link : "ProductLink",
-                            tagName : "TagName",
-                            cta : "Buy Now",
-                          },
-                        ]
-                      }
-                    ]
-                  },
-                ],
+                  title : "Large (50+ lb.)",
+                  breadcrumb : "Breed Size",
+                  items : [
+                    {
+                      title : "none",
+                      breadcrumb : "special Notes",
+                      items : [
+                        {
+                          id : 1,
+                          title : "ProductsName",
+                          img : "ImageLink",
+                          link : "ProductLink",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 2,
+                          title : "ProductsName",
+                          img : "ImageLink",
+                          link : "ProductLink",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 3,
+                          title : "ProductsName",
+                          img : "ImageLink",
+                          link : "ProductLink",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                        {
+                          id : 4,
+                          title : "ProductsName",
+                          img : "ImageLink",
+                          link : "ProductLink",
+                          tagName : "TagName",
+                          cta : "Buy Now",
+                        },
+                      ]
+                    }
+                  ]
+                },
+                
+              ],
             },
+
+              
+
+                ],
+              },
             ]
           },
 
@@ -2575,23 +2419,4 @@
         }
       
       ]
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="modal.js"></script>
-<script src="tab.js"></script>
-
-</body>
-</html>
+    
