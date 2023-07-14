@@ -22,3 +22,10 @@
     text-decoration: underline;
     width: 100%;
 }
+
+
+/* Hide default scrollbar */
+
+.citrus_petco_hills_modal-content::-webkit-scrollbar {
+    display: none;
+}

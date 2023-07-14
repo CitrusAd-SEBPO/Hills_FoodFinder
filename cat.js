@@ -1,7 +1,6 @@
 const cat = [
   // CAT	0-1	DRY	NONE Start
   {
-    id: 1,
     title: "Hills Science Diet Indoor Chicken Recipe Dry Kitten Food, 7 lbs.",
     img: "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/cat/citrus_hills_cat_1336355.png",
     link: "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-indoor-kitten-food-7-lbs-1336355",
@@ -10,7 +9,6 @@ const cat = [
   },
 
   {
-    id: 2,
     title: "Hills Science Diet Chicken Recipe Dry Kitten Food, 15.5 lbs., Bag",
     img: "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/cat/citrus_hills_cat_2549831.png",
     link: "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-healthy-development-chicken-recipe-dry-kitten-food-155-lbs-2549831",
@@ -19,7 +17,6 @@ const cat = [
   },
 
   {
-    id: 3,
     title: "Hills Science Diet Chicken Recipe Dry Kitten Food, 7 lbs.",
     img: "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/cat/citrus_hills_cat_1336231.png",
     link: "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-healthy-development-original-kitten-food-7-lbs-1336231",
@@ -28,7 +25,6 @@ const cat = [
   },
 
   {
-    id: 4,
     title: "Hills Science Diet Chicken Recipe Dry Kitten Food, 3.5 lbs., Bag",
     img: "https://citrusad-sebpo.github.io/Hills_FoodFinder/img/cat/citrus_hills_cat_1214098.png",
     link: "https://www.petco.com/shop/en/petcostore/product/hills-science-diet-healthy-development-original-kitten-food-35-lbs-1214098",

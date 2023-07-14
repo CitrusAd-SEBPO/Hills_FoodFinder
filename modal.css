@@ -31,6 +31,9 @@
     height: 100%;
     overflow-y: auto;
     padding-bottom: 100px;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   .hills_modals_header{
@@ -94,23 +97,26 @@
   .citrus_petco_hills_modal-content .hills_modals_bread{
     gap: 20px;
     padding: 40px 0 0;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
   }
   .hills_modals_bread .bread__container{
     gap: 20px;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .hills_modals_bread .bread_btn{
     color: #00205B;
     border-radius: 36.5px;
     border: 3px solid #00205B;
-    padding: 5px 10px;
+    padding: 2px 5px 3.5px;
     background: #fff;
     font-family: "PetcoCircularTT-Regular", arial !important;
     font-size: 16px;
     cursor: pointer;
     width: 142px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
