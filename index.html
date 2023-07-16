@@ -5207,9 +5207,9 @@
                 let breadIndex = bread.id;
                 if (index) {
                     breadIndex = breadcrumbs[index - 1].id;
-                    breadcrumb += `<button onclick="backToSpecificBreadcrumb(${breadIndex})" class="bread_btn" onclick="showContent(event, 'tab-content')" id="defaultOpen">${bread.title}<img src="img/citrus_hills_edit.svg"></button>`
+                    breadcrumb += `<button onclick="backToSpecificBreadcrumb(${breadIndex})" class="bread_btn" onclick="showContent(event, 'tab-content')" id="defaultOpen">${bread.title}<img src="img/citrus_hills_edit.png"></button>`
                 } else {
-                    breadcrumb += `<button onclick="goToInitialState()" class="bread_btn" onclick="showContent(event, 'tab-content')" id="defaultOpen">${bread.title}<img src="img/citrus_hills_edit.svg"></button>`
+                    breadcrumb += `<button onclick="goToInitialState()" class="bread_btn" onclick="showContent(event, 'tab-content')" id="defaultOpen">${bread.title}<img src="img/citrus_hills_edit.png"></button>`
                 }
             })
             document.querySelector('.bread__container').innerHTML = breadcrumb;

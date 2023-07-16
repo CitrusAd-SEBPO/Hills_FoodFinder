@@ -152,6 +152,14 @@
     transition: 0.4s ease-in-out;
   }
 
+  .hills_modals_bread .bread_btn:hover img{
+    background-image: url("img/citrus_hills_edit-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18px;
+    margin: 0 -7px;
+  }
+
   /* Serch Contents */
   .citrus_hills .citrus_petco_hills_modal-body .search_content h3{
     color: #00205B;
