@@ -142,12 +142,27 @@
     }
 
     .citrus_petco_hills_modal-content .hills_modals_bread #button-start-over{
-        padding: 0 0 0 30px;
+        padding: 0;
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .hills_modals_bread .bread__container{
         padding: 0;
         order: 2;
+    }
+
+    /* Serch Type */
+    .citrus_hills .citrus_petco_hills_modal-body .search_content .search-type{
+        width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper{
+        width: 240%;
+        overflow-x: auto;
     }
 
     
