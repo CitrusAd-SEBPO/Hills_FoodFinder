@@ -65,7 +65,19 @@
 
     /* Start Quiz */
     #findFood{
+        background: none;
+        color: #00205B;
+        text-transform: capitalize;
+        text-decoration: underline !important;
+        border: none;
         text-transform: initial;
+        margin: 20% auto 0;
+    }
+
+    #findFood:hover{
+        color: #001952;
+        background: #fff;
+        border: none;
     }
 
     .citrus_hills .citrus_petco_hills_modal{

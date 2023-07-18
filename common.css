@@ -25,25 +25,30 @@
 
 
 #findFood{
-    width: 300px;
-    height: 450px;
-    border: 1px solid #ddd;
-    background: #00205B;
-    color : #fff;
-    margin: 100px auto;
+    min-width: 211px;
+    border-radius: 0.25rem;
+    background-color: #001952;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    border: 1px solid #001952;
+    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    margin: 15% auto 0;
     cursor: pointer;
-    font-family: "PetcoCircularTT-Bold", arial !important;
-    border-radius: 10px;
-    text-decoration: underline;
     
 }
 
-#findFood{
-    text-transform: uppercase;
+#findFood:hover{
+    color: #001952;
+    background: #fff;
+    border: 1px solid #001952;
+    transition: 0.4s ease-in-out;
 }
 
 
