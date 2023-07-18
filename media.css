@@ -65,7 +65,7 @@
 
     /* Start Quiz */
     #findFood{
-        text-transform: capitalize;
+        text-transform: initial;
     }
 
     .citrus_hills .citrus_petco_hills_modal{
