@@ -63,6 +63,11 @@
         display: block;
     }
 
+    /* Start Quiz */
+    #findFood{
+        text-transform: capitalize;
+    }
+
     .citrus_hills .citrus_petco_hills_modal{
         width: 100%;
     }

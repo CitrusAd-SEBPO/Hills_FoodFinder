@@ -42,6 +42,10 @@
     
 }
 
+#findFood{
+    text-transform: uppercase;
+}
+
 
 /* Hide default scrollbar */
 
