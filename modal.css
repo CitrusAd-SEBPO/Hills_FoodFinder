@@ -38,6 +38,7 @@
 
   .hills_modals_header{
     gap: 40px;
+    padding-top: 30px;
   }
 
   .hills_modals_header__logo{
@@ -55,10 +56,11 @@
   }
   
   .citrus_hills .close {
-      color: #8B8B8B;
       float: right;
-      font-size: 30px;
-      font-weight: normal;
+  }
+
+  .citrus_hills .close img{
+    width: 29.5px;
   }
   
   .close:hover,
