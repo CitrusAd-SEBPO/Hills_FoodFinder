@@ -5383,7 +5383,7 @@
     }
 
     function appendStartOver() {
-        document.querySelector('#button-start-over').innerHTML = '<button class="reset-search" onclick="goToInitialState()">Start Over</button>';
+        document.querySelector('#button-start-over').innerHTML = '<button class="reset-search" onclick="goToInitialState(); clickTrackLink(this);" manual_cm_sp="sponsoredbrandpage:brandname:producttool:1:startover:startover">Start Over</button>';
     }
 
     //onclik clickTrackLink temporary method, only for testing, prod it will be remove
