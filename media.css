@@ -163,6 +163,7 @@
     .citrus_hills .citrus_petco_hills_modal-body .search_content h3{
         max-width: 330px;
         margin: 0 auto;
+        padding: 20px 0;
     }
 
     /* Breadcrumb */
@@ -191,6 +192,7 @@
         width: 100%;
         overflow: hidden;
         overflow-x: auto;
+        gap : 20px;
     }
 
     .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper{
@@ -203,6 +205,10 @@
     .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a {
         min-width: 46%;
         flex-wrap: wrap;
+    }
+
+    .citrus_hills .reset-search{
+        text-align: left;
     }
 
     
