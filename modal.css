@@ -18,7 +18,7 @@
   .citrus_petco_hills_modal-content {
     position: fixed;
     right: 0;
-    background-color: #fefefe;
+    background-color: #ffffff;
     width: 70%;
     max-width: 950px;
     padding: 30px;
@@ -75,7 +75,8 @@
   }
   
   .citrus_petco_hills_modal-body {padding: 2px 16px 50px;}
-  
+
+  /* Slide out the popup from the right */
   @-webkit-keyframes slideIn {
     from {right: -100px; opacity: 0} 
     to {right: 0; opacity: 1}
