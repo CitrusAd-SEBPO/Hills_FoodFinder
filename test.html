@@ -5383,7 +5383,7 @@
     }
 
     function appendStartOver() {
-        document.querySelector('#button-start-over').innerHTML = '<button class="reset-search" onclick="goToInitialState()">Start Over</button>';
+        document.querySelector('#button-start-over').innerHTML = '<button class="reset-search" onclick="goToInitialState(); clickTrackLink(this);" manual_cm_sp="sponsoredbrandpage:brandname:producttool:1:startover:startover">Start Over</button>';
     }
 
     //onclik clickTrackLink temporary method, only for testing, prod it will be remove
@@ -5393,37 +5393,32 @@
 
     function render(addBreadcrumb = true) {
         let content = '';
-        if (activeItems.breadcrumb) {
+        if (addBreadcrumb && activeItems.breadcrumb) {
             const newBreadcrumb = {
                 title: activeItems.breadcrumb,
                 visible_title: activeItems.title,
                 tagName: activeItems.breadTagName,
                 id: activeItems.id,
-                is_active: false
             };
             const bIndex = breadcrumbs.findIndex(value => value.title === activeItems.breadcrumb);
-            if (addBreadcrumb) {
-                if (bIndex > -1) {
-                    breadcrumbs.splice(bIndex);
-                    breadcrumbs[bIndex] = newBreadcrumb;
-                } else {
-                    breadcrumbs.push(newBreadcrumb);
-                }
-            }
             if (bIndex > -1) {
-                breadcrumbs.forEach((item, index) => {
-                    item.is_active = index === (bIndex + 1)
+                breadcrumbs[bIndex].visible_title = activeItems.title;
+                breadcrumbs[bIndex].tagName = activeItems.breadTagName;
+                breadcrumbs.forEach((value, index) => {
+                    if (index >= bIndex) {
+                        let targetIndex = findIdByTitle(activeItems, value.title);
+                        if (targetIndex) {
+                            breadcrumbs[index].id = targetIndex;
+                        } else {
+                            breadcrumbs.splice(index, 1);
+                        }
+                    }
                 })
+            } else {
+                breadcrumbs.push(newBreadcrumb);
             }
+            breadcrumbRender();
         }
-        if(activeItems===animals){
-            breadcrumbs.forEach((item, index) => {
-                item.is_active = index === 0
-            })
-        }
-
-        breadcrumbRender();
-
 
         if (!activeItems.type) {
             let itemsCount = activeItems.items.length;
@@ -5466,9 +5461,9 @@
                 let breadIndex = bread.id;
                 if (index) {
                     breadIndex = breadcrumbs[index - 1].id;
-                    breadcrumb += `<button onclick="backToSpecificBreadcrumb(${breadIndex}); clickTrackLink(this);" manual_cm_sp="${bread.tagName}" class="bread_btn ${bread.is_active ? 'btn-active' : ''}" onclick="showContent(event, 'tab-content')" id="defaultOpen">${bread.visible_title}<img src="img/citrus_hills_edit.svg"></button>`
+                    breadcrumb += `<button onclick="backToSpecificBreadcrumb(${breadIndex}); clickTrackLink(this);" manual_cm_sp="${bread.tagName}" class="bread_btn" onclick="showContent(event, 'tab-content')" id="defaultOpen">${bread.visible_title}<img src="img/citrus_hills_edit.png"><img src="img/citrus_hills_edit-white.png" class="hide-img"></button>`
                 } else {
-                    breadcrumb += `<button onclick="backToSpecificBreadcrumb(0); clickTrackLink(this);" class="bread_btn ${bread.is_active ? 'btn-active' : ''}" onclick="showContent(event, 'tab-content')" manual_cm_sp="${bread.tagName}" id="defaultOpen">${bread.visible_title}<img src="img/citrus_hills_edit.svg"></button>`
+                    breadcrumb += `<button onclick="goToInitialState(); clickTrackLink(this);" class="bread_btn" onclick="showContent(event, 'tab-content')" manual_cm_sp="${bread.tagName}" id="defaultOpen">${bread.visible_title}<img src="img/citrus_hills_edit.png"><img src="img/citrus_hills_edit-white.png" class="hide-img"></button></button>`
                 }
             })
             document.querySelector('.bread__container').innerHTML = breadcrumb;
@@ -5477,6 +5472,7 @@
 
     //very initial render
     render();
+
 
 
 </script>
