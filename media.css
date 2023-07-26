@@ -51,6 +51,7 @@
 
     .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper {
         overflow-x: auto;
+        justify-content: flex-start;
     }
 
     
