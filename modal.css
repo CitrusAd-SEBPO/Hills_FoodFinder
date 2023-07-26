@@ -100,7 +100,7 @@
   .citrus_petco_hills_modal-content .hills_modals_bread{
     gap: 20px;
     padding: 40px 0 0;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
   .hills_modals_bread .bread__container{
@@ -140,7 +140,7 @@
     min-width : 113px;
     background: none;
     border: none;
-    padding: 0;
+    padding: 3px 0 0;
     cursor: pointer;
   }
 
