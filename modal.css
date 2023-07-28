@@ -313,19 +313,19 @@
 
   }
 
-  .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a:hover {
+  /* .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a:hover {
     border: 1px solid #001952;
     transition: 0.4s ease-in-out;
   }
 
   .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a:hover p {
     margin: 18px 0;
-  }
+  } */
 
-  .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a:hover .cta-underline{
+  /* .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a:hover .cta-underline{
     padding-left: 10px;
     transition: 0.4s ease-in-out;
-  }
+  } */
 
   .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a .cta-underline{
     text-align: left;
