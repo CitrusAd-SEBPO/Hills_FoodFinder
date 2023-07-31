@@ -57,6 +57,7 @@
                 id: 1,
                 title: "Cat",
                 img: 'img/citrus-hills-cat.png',
+                altTag : "Cartoon cat plays with ball of yarn",
                 breadcrumb: "Pet Specifies",
                 breadTagName : "sponsoredbrandpage:brandname:producttool:1:catselection:breadcrumbcatselect",
                 tagName : "sponsoredbrandpage:brandname:producttool:1:catselection:breadcrumbcatselect",
@@ -1521,6 +1522,7 @@
                 title: "Dog",
                 id: 53,
                 img: 'img/citrus-hills-dog.png',
+                altTag : "Cartoon dog wags its tail",
                 breadcrumb: "Pet Specifies",
                 breadTagName : "sponsoredbrandpage:brandname:producttool:1:dogselection:breadcrumbdogselect",
                 tagName : "sponsoredbrandpage:brandname:producttool:1:dogselection:breadcrumbdogselect",
@@ -5436,14 +5438,14 @@
         activeItems.items.forEach((item, index) => {
             if (activeItems.type === 'animal') {
                 content += `<a onclick="setActiveItems(${item.id}); clickTrackLink(this);" manual_cm_sp="${item.tagName}" href="#" class="flex-box">
-                                                    <img src="${item.img}" alt="Cartoon cat plays with ball of yarn">
+                                                    <img src="${item.img}" alt="${item.altTag}">
                                                     <button >${item.title}</button>`
                 content += index === 0 ? `</a><span>OR</span>` : ''
             } else if (activeItems.type === 'button') {
                 content += `<button onclick="setActiveItems(${item.id}); clickTrackLink(this);" manual_cm_sp="${item.tagName}" class="search-type-btn">${item.title}</button>`
             } else {
                 content += `<a   onclick="clickTrackLink(this)" href="${item.link}" manual_cm_sp="${item.tagName}" class="flex-box">
-                                        <img src="${item.img}" alt="Cartoon dog wags its tail" >
+                                        <img src="${item.img}" >
                                             <p>${item.title}</p>
                                             <div class="cta-underline">${item.cta}</div>
                                     </a>`
