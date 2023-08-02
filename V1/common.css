@@ -1,0 +1,59 @@
+
+.citrus_hills img{
+    width: 100%;
+}
+
+.citrus_hills .flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.citrus_hills a{
+    text-decoration: none;
+}
+
+.citrus_hills  .cta-underline{
+    font-size: 16px;
+    color: #001952;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    text-align: center;
+    text-decoration: underline;
+    width: 100%;
+}
+
+
+#findFood{
+    min-width: 211px;
+    border-radius: 0.25rem;
+    background-color: #001952;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    border: 1px solid #001952;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15% auto 0;
+    cursor: pointer;
+    
+}
+
+#findFood:hover{
+    color: #001952;
+    background: #fff;
+    border: 1px solid #001952;
+    transition: 0.4s ease-in-out;
+}
+
+
+/* Hide default scrollbar */
+
+.citrus_petco_hills_modal-content::-webkit-scrollbar {
+    display: none;
+}
