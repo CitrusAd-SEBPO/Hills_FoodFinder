@@ -1,0 +1,43 @@
+
+.citrus_hills .citrus_petco_hills_bp__hero{
+    background-image: url("img/bp/citrus-petco-hills-curve-dsk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    min-height: 383px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.citrus_petco_hills_bp__hero h2, p{
+    color: #fff;
+}
+
+.citrus_petco_hills_bp__hero h2{
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+}
+
+.citrus_petco_hills_bp__hero p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 10px 0 20px;
+}
+
+.citrus_petco_hills_bp__hero--logo{
+    padding: 5% 0 0 4%;
+}
+
+.citrus_petco_hills_bp__hero--copy{
+    padding: 5%;
+}
+
+.citrus_petco_hills_bp__hero--shots{
+    padding: 30px 4% 0 0;
+}

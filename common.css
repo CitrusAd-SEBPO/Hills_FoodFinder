@@ -1,4 +1,18 @@
 
+/* Body styles need to be removed in Handoff */
+body{
+    margin: 0;
+}
+
+.citrus_petco_hills_bp h1, h2, h3{
+    font-family: "PetcoCircularTT-Bold", arial !important;
+}
+
+.citrus_petco_hills_bp p{
+    font-family: "PetcoCircularTT-Regular", arial !important;
+}
+
+
 .citrus_hills img{
     width: 100%;
 }
@@ -25,22 +39,21 @@
 
 
 #findFood{
-    min-width: 211px;
+    min-width: 247px;
     border-radius: 0.25rem;
-    background-color: #001952;
+    background-color: #ffffff;
     padding: 1rem 0;
     text-align: center;
-    color: #fff;
+    color: #000000;
     font-family: "PetcoCircularTT-Bold", arial !important;
-    margin-top: 3rem;
-    text-transform: uppercase;
     border: 1px solid #001952;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 15% auto 0;
+    margin: 0;
     cursor: pointer;
+    font-size: 16px;
     
 }
 
