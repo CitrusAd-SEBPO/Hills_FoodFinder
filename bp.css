@@ -1,3 +1,7 @@
+.citrus_petco_hills_bp{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 .citrus_hills .citrus_petco_hills_bp__hero{
     background-image: url("img/bp/citrus-petco-hills-curve-dsk.png");
@@ -9,11 +13,11 @@
     margin: 0 auto;
 }
 
-.citrus_petco_hills_bp__hero h2, p{
+.citrus_petco_hills_bp__hero h1, p{
     color: #fff;
 }
 
-.citrus_petco_hills_bp__hero h2{
+.citrus_petco_hills_bp__hero h1{
     font-size: 29px;
     font-style: normal;
     font-weight: 900;
@@ -40,4 +44,79 @@
 
 .citrus_petco_hills_bp__hero--shots{
     padding: 30px 4% 0 0;
+}
+
+
+/* Specific Range Sections */
+.citrus_petco_hills_bp__specific_range{
+
+}
+
+.citrus_hills .citrus_petco_hills_bp__specific_range--content{
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 15px 20px;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.citrus_petco_hills_bp__specific_range--content::-webkit-scrollbar {
+    display: none;
+}
+
+.citrus_petco_hills_bp__specific_range--content a{
+    min-width: 186px;
+}
+
+.citrus_petco_hills_bp__specific_range--content a h3{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+}
+
+/* Bottom Video section */
+.citrus_petco_hills_bp__videos{
+
+}
+
+.citrus_hills .citrus_petco_hills_bp__videos--content{
+    background: #003F81;
+    padding: 20px 10% 50px;
+    margin-top: 50px;
+    gap: 10%;
+    justify-content: space-between;
+}
+
+.citrus_petco_hills_bp__videos--img{
+    margin-top: -50px;
+}
+
+.citrus_hills .citrus_petco_hills_bp__videos--copy{
+    width: 50%;
+    flex-direction: column;
+}
+
+.citrus_petco_hills_bp__videos--copy h2{
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+}
+
+.citrus_petco_hills_bp__videos--copy p{
+    padding: 20px 0;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+}
+
+.citrus_petco_hills_bp__videos--copy .cta-box{
+    
 }

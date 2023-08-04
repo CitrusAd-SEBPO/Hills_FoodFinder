@@ -40,7 +40,7 @@
         min-height: 350px;
     }
 
-    .citrus_petco_hills_bp__hero h2{
+    .citrus_petco_hills_bp__hero h1{
         font-size: 22px;
     }
     
@@ -94,7 +94,7 @@
         min-height: 330px;
     }
 
-    .citrus_petco_hills_bp__hero h2{
+    .citrus_petco_hills_bp__hero h1{
         font-size: 24px;
     }
     
@@ -104,6 +104,27 @@
     
     .citrus_petco_hills_bp__hero--shots{
         min-width: 300px;
+    }
+
+    /* Specific Range Sections */
+    .citrus_hills .citrus_petco_hills_bp__specific_range--content{
+        justify-content: flex-start;
+    }
+
+    /* Bottom Video section */
+    .citrus_hills .citrus_petco_hills_bp__videos--content {
+        padding: 20px 5% 30px;
+        margin-top: 50px;
+        gap: 5%;
+    }
+
+    .citrus_petco_hills_bp__videos--img {
+        margin-top: -80px;
+        width: 50%;
+    }
+
+    .citrus_petco_hills_bp__videos--copy p {
+        padding: 10px 0;
     }
 
     /* Product list */
@@ -148,15 +169,79 @@
         flex-wrap: wrap;
     }
 
+    .citrus_petco_hills_bp__hero--logo{
+        display: none;
+    }
+
+    .citrus_petco_hills_bp__hero--copy {
+        padding: 5% 5% 2%;
+        max-width: 310px;
+        margin: 0 auto;
+    }
+
+    .citrus_petco_hills_bp__hero h1, p{
+        text-align: center;
+    }
+
+    .citrus_petco_hills_bp__hero--shots {
+        padding: 0 15%;
+    }
+
+    .citrus_petco_hills_bp__hero h1{
+        font-size: 25px;
+    }
+
+    .citrus_petco_hills_bp__hero p{
+        padding: 10px 0 0;
+        font-size: 16px;
+    }
+
+    /* Specific Range Sections */
+    .citrus_hills .citrus_petco_hills_bp__specific_range--content{
+        justify-content: flex-start;
+    }
+
+    /* Bottom Video section */
+    .citrus_hills .citrus_petco_hills_bp__videos--content{
+        padding: 0;
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .citrus_hills .citrus_petco_hills_bp__videos--copy{
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    .citrus_petco_hills_bp__videos--copy h2{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .citrus_petco_hills_bp__videos--copy p{
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .citrus_petco_hills_bp__videos--img {
+        margin-top: 0;
+        order: 2;
+    }
+
+
+    /* End Brand Page */
+
+
+
     /* Start Quiz */
     #findFood{
         background: none;
-        color: #00205B;
+        color: #fff;
         text-transform: capitalize;
         text-decoration: underline !important;
         border: none;
         text-transform: initial;
-        margin: 20% auto 0;
+        margin: 0 auto;
     }
 
     #findFood:hover{
