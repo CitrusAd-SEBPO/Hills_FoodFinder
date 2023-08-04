@@ -163,6 +163,16 @@
         display: block;
     }
 
+    .citrus_hills  .cta-box{
+        background: none;
+        color: #fff;
+        text-transform: capitalize;
+        text-decoration: underline !important;
+        border: none;
+        text-transform: initial;
+        margin: 0 auto;
+    }
+
    /* Brand page styles */
    .citrus_hills .citrus_petco_hills_bp__hero{
         background-image: url("img/bp/citrus-petco-hills-curve-mob.png");
