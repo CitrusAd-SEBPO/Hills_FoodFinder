@@ -460,6 +460,19 @@
         /* padding-bottom: 100px; */
     }
 
+    /* Tab */
+    .citrus_petco_hills_bp_tab_controls .splide__arrow{
+        display: none;
+    }
+
+    .citrus_petco_hills_bp_tab_item .single-tab-text p{
+        text-align: left;
+    }
+
+    .citrus_petco_hills_bp_tab_wrapper .citrus_petco_hills_bp_tab_item{
+        min-width: 60%;
+    }
+
     
 
     

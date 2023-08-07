@@ -32,6 +32,7 @@
     line-height: normal;
     margin: 0;
     padding: 10px 0 20px;
+    color: #fff;
 }
 
 .citrus_petco_hills_bp__hero--logo{
@@ -80,10 +81,6 @@
 }
 
 /* Bottom Video section */
-.citrus_petco_hills_bp__videos{
-
-}
-
 .citrus_hills .citrus_petco_hills_bp__videos--content{
     background: #003F81;
     padding: 20px 10% 50px;
@@ -115,6 +112,7 @@
     font-style: normal;
     line-height: normal;
     text-align: center;
+    color: #fff;
 }
 
 .citrus_petco_hills_bp__videos--copy .cta-box{
