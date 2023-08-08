@@ -473,6 +473,18 @@
         min-width: 60%;
     }
 
+    .citrus_petco_hills_bp__TabId {
+        justify-content: flex-start;
+    }
+
+    .splide__arrow{
+        display: none;
+    }
+
+    .citrus_petco_hills_bp-section__tab-content .citrus_petco_hills_bp__single_item{
+        max-width: 60%;
+    }
+
     
 
     

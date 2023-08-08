@@ -12,7 +12,8 @@
     -webkit-animation-name: fadeIn; 
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    background: rgb(0 0 0 / 0.20);
   }
   
   .citrus_petco_hills_modal-content {
@@ -56,11 +57,19 @@
   }
   
   .citrus_hills .close {
-      float: right;
+    float: right;
+    -webkit-animation-name: slideOut;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideOut;
+    animation-duration: 0.4s;
   }
 
   .citrus_hills .close img{
     width: 29.5px;
+    -webkit-animation-name: fadeOut;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeOut;
+    animation-duration: 0.4s;
   }
   
   .close:hover,
@@ -96,6 +105,8 @@
     from {opacity: 0} 
     to {opacity: 1}
   }
+
+
 
   /* Breadcrumb */
   .citrus_petco_hills_modal-content .hills_modals_bread{
@@ -324,19 +335,6 @@
       display: none;
   }
 
-  /* .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a:hover {
-    border: 1px solid #001952;
-    transition: 0.4s ease-in-out;
-  }
-
-  .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a:hover p {
-    margin: 18px 0;
-  } */
-
-  /* .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a:hover .cta-underline{
-    padding-left: 10px;
-    transition: 0.4s ease-in-out;
-  } */
 
   .citrus_hills .citrus_petco_hills_modal-body .search_content .products-wrapper a .cta-underline{
     text-align: left;
