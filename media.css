@@ -255,8 +255,8 @@
     }
 
     #findFood:hover{
-        color: #001952;
-        background: #fff;
+        color: #fff;
+        background: none;
         border: none;
     }
 
