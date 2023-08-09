@@ -92,6 +92,10 @@ body{
     transition: 0.4s ease-in-out;
 }
 
+#findFood:focus-visible{
+    outline: none;
+}
+
 .citrus_hills .section-title{
     color: #000;
     font-size: 20px;
