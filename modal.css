@@ -55,11 +55,17 @@
     top: 20%;
     position: absolute;
     z-index: 999;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .citrus_hills .citrus_petco_hills_modal #drawerHandle span{
     border-radius: 6px;
     background: #B9B9B9;
     width: 142px;
     height: 7px;
     margin: 0 auto 20px;
+    display: block;
   }
 
   .citrus_hills .swipeModal{
