@@ -275,16 +275,22 @@
     .citrus_hills .citrus_petco_hills_modal{
         width: 100%;
         background: rgb(0 0 0 / 0.20);
+        /* transition: transform 0.8s ease-in-out; */
+        /* transition: bottom  0.8s ease-in-out, opacity 0.5s; */
     }
 
     .citrus_hills .citrus_petco_hills_modal-content{
         padding: 20px 10px;
         width: calc(100% - 20px);
-        height: 629px;
+        height: 710px;
         background: #fff;
         border-radius: 8px;
         bottom: 0;
         right: unset;
+    }
+
+    .citrus_hills .citrus_petco_hills_modal-content .drawerHandle{
+        display: block;
     }
 
     .citrus_hills .hills_modals_header{
@@ -297,6 +303,7 @@
         position: absolute;
         right: 15px;
         top: 15px;
+        display: none;
     }
     .citrus_hills .close img{
         width: 24px;
