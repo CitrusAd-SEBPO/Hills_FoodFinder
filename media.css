@@ -506,15 +506,75 @@
     .citrus_petco_hills_bp-section__tab-content .citrus_petco_hills_bp__single_item{
         max-width: 60%;
     }
-
-    
-
     
 
 }
 
-/* Mobile devices */
-@media only screen and (max-width: 320px){
-   
+/* Mobile devices 425x682 */
+@media only screen and (width: 425px) and (height: 682px){
+    .citrus_hills .citrus_petco_hills_modal-content{
+        height: 620px;
+    }
+    /* Drawer for swipe */
+    .citrus_hills .citrus_petco_hills_modal #drawerHandle {
+        top: 2%;
+    }
+
+}
+
+/* Mobile devices 375x682 */
+@media only screen and (width: 375px) and (height: 682px){
+    .citrus_hills .citrus_petco_hills_modal-content{
+        height: 620px;
+    }
+    /* Drawer for swipe */
+    .citrus_hills .citrus_petco_hills_modal #drawerHandle {
+        top: 2%;
+    }
+
+}
+
+/* Mobile devices 320x682 */
+@media only screen and (width: 320px) and (height: 682px){
+    .citrus_hills .citrus_petco_hills_modal-content{
+        height: 620px;
+    }
+    /* Drawer for swipe */
+    .citrus_hills .citrus_petco_hills_modal #drawerHandle {
+        top: 2%;
+    }
+
+}
+
+/* Mobile devices iPhone 12 Pro */
+@media only screen and (width: 390px) and (height: 844px){
+    /* Drawer for swipe */
+    .citrus_hills .citrus_petco_hills_modal #drawerHandle {
+        top: 20%;
+    }
+
+}
+
+/* Mobile devices iPhone 5 SE */
+@media only screen and (width: 375px) and (height: 667px){
+    .citrus_hills .citrus_petco_hills_modal-content{
+        height: 610px;
+    }
+    /* Drawer for swipe */
+    .citrus_hills .citrus_petco_hills_modal #drawerHandle {
+        top: 2%;
+    }
+
+}
+
+/* Mobile devices iPhone XR */
+@media only screen and (width: 414px) and (height: 896px){
+    .citrus_hills .citrus_petco_hills_modal-content{
+        height: 670px;
+    }
+    /* Drawer for swipe */
+    .citrus_hills .citrus_petco_hills_modal #drawerHandle {
+        top: 20%;
+    }
 
 }
