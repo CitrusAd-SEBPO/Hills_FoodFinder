@@ -1,0 +1,109 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Swipe Down Modal</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: transform 0.8s ease-in-out;
+}
+
+.modal-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.close {
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.content-below {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <button id="findFood">Open Modal</button>
+  </div>
+
+  <div id="citrus_petco_hills_modal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+      <h1>Test your skills</h1>
+    </div>
+  </div>
+
+  <script>
+const citrus_petco_hills_modal = document.getElementById("citrus_petco_hills_modal");
+// const contentBelow = document.querySelector(".content-below");
+let startY = 0;
+
+document.addEventListener('touchstart', (event) => {
+  startY = event.touches[0].clientY;
+});
+
+document.addEventListener('touchend', (event) => {
+  const endY = event.changedTouches[0].clientY;
+  const deltaY = endY - startY;
+
+  if (deltaY > 50) { // If swiped down by a certain threshold
+    citrus_petco_hills_modal.style.transform = "translateY(100%)";
+    document.body.style.overflow = "auto"; // Allow scrolling
+    // contentBelow.style.display = "block";
+
+    setTimeout(() => {
+      citrus_petco_hills_modal.style.display = "none";
+      citrus_petco_hills_modal.style.transform = "none"; // Reset the transform
+    }, 800); // Animation duration in milliseconds
+  }
+});
+
+const btn = document.getElementById("findFood");
+btn.onclick = function() {
+  citrus_petco_hills_modal.style.display = "block";
+  // contentBelow.style.display = "none";
+  document.body.style.overflow = "hidden"; // Prevent scrolling
+};
+
+  </script>
+</body>
+</html>
+

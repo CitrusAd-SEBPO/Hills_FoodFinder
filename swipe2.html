@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          background-color: #f0f0f0;
+        }
+      
+        .window {
+          width: 300px;
+          height: 200px;
+          background-color: #ffffff;
+          border: 2px solid #333333;
+          border-radius: 10px;
+          padding: 20px;
+          position: relative;
+          overflow: hidden;
+          transition: transform 0.5s ease;
+        }
+      
+        .content {
+          opacity: 0;
+          transition: opacity 0.5s ease;
+        }
+      
+        .window.open {
+          transform: translateY(0);
+        }
+      
+        .window.open .content {
+          opacity: 1;
+        }
+      
+        .button {
+          display: block;
+          text-align: center;
+          margin-top: 10px;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    <div class="window" id="swipeWindow">
+        <div class="content">
+          <p>This is the window content.</p>
+        </div>
+      </div>
+    
+      <script>
+        const swipeWindow = document.getElementById('swipeWindow');
+        let startY = 0;
+    
+        swipeWindow.addEventListener('touchstart', (event) => {
+          startY = event.touches[0].clientY;
+        });
+    
+        swipeWindow.addEventListener('touchend', (event) => {
+          const endY = event.changedTouches[0].clientY;
+          const deltaY = startY - endY;
+    
+          if (deltaY < 50) {
+            swipeWindow.classList.add('open');
+          } else if (deltaY > -50) {
+            swipeWindow.classList.remove('open');
+          }
+        });
+      </script>
+</body>
+</html>

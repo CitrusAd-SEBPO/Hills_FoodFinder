@@ -50,8 +50,11 @@
     animation-duration: 0.4s !important;
   }
 
-  .citrus_hills .citrus_petco_hills_modal-content .drawerHandle{
+  .citrus_hills .citrus_petco_hills_modal #drawerHandle{
     display: none;
+    top: 20%;
+    position: absolute;
+    z-index: 999;
     border-radius: 6px;
     background: #B9B9B9;
     width: 142px;

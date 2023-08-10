@@ -1,0 +1,113 @@
+
+/* Body styles need to be removed in Handoff */
+body{
+    margin: 0;
+}
+
+.citrus_petco_hills_bp h1, h2, h3{
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    margin: 0;
+}
+
+.citrus_petco_hills_bp p{
+    font-family: "PetcoCircularTT-Regular", arial !important;
+    margin: 0;
+}
+
+.citrus_hills{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.citrus_hills::-webkit-scrollbar {
+    display: none;
+}
+
+.citrus_hills img{
+    width: 100%;
+}
+
+.citrus_hills .flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.citrus_hills a{
+    text-decoration: none;
+}
+
+.citrus_hills  .cta-underline{
+    font-size: 16px;
+    color: #001952;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    text-align: center;
+    text-decoration: underline;
+    width: 100%;
+}
+
+.citrus_hills  .cta-box{
+    width: 166px;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    color: #000000;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    border: 1px solid #001952;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+#findFood{
+    min-width: 247px;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    color: #000000;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    border: 1px solid #001952;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+#findFood:hover{
+    color: #001952;
+    background: #fff;
+    border: 1px solid #001952;
+    transition: 0.4s ease-in-out;
+}
+
+#findFood:focus-visible{
+    outline: none;
+}
+
+.citrus_hills .section-title{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+
+/* Hide default scrollbar */
+
+.citrus_petco_hills_modal-content::-webkit-scrollbar {
+    display: none;
+}
