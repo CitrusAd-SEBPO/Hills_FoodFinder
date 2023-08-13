@@ -5,14 +5,13 @@
     z-index: 1; 
     left: 0;
     top: 0;
-    width: 70%;
-    max-width: 950px; 
+    width: 100%;
     height: 100%; 
     overflow: auto;
-    -webkit-animation-name: fadeIn; 
+    /* -webkit-animation-name: fadeIn; 
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
-    animation-duration: 0.4s;
+    animation-duration: 0.4s; */
     background: rgb(0 0 0 / 0.20);
   }
   
@@ -24,9 +23,9 @@
     max-width: 950px;
     padding: 30px;
     -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.5s;
     animation-name: slideIn;
-    animation-duration: 0.4s;
+    animation-duration: 0.5s;
     box-shadow: 0 5px 3px 0 #ddd;
     height: 100%;
     overflow-y: auto;
@@ -38,25 +37,26 @@
 
   .citrus_hills .hideModal{
     -webkit-animation-name: slideOut !important;
-    -webkit-animation-duration: 0.4s !important;
+    -webkit-animation-duration: 0.8s !important;
     animation-name: slideOut !important;
-    animation-duration: 0.4s !important;
+    animation-duration: 0.8s !important;
   }
 
   .citrus_hills .hideModal .citrus_petco_hills_modal-content{
     -webkit-animation-name: slideOut !important;
-    -webkit-animation-duration: 0.4s !important;
+    -webkit-animation-duration: 0.8s !important;
     animation-name: slideOut !important;
-    animation-duration: 0.4s !important;
+    animation-duration: 0.8s !important;
   }
 
   .citrus_hills .citrus_petco_hills_modal #drawerHandle{
     display: none;
-    top: 20%;
+    top: -10px;
     position: absolute;
     z-index: 999;
     width: 100%;
     padding: 20px 0;
+    left: 0;
   }
 
   .citrus_hills .citrus_petco_hills_modal #drawerHandle span{
@@ -122,16 +122,16 @@
 
   /* Slide out the popup from the right */
   @-webkit-keyframes slideIn {
-    from {right: -100px; opacity: 0} 
+    from {right: -100%; opacity: 1} 
     to {right: 0; opacity: 1}
   }
   
   @keyframes slideIn {
-    from {right: -100px; opacity: 0}
+    from {right: -100%; opacity: 1}
     to {right: 0; opacity: 1}
   }
   
-  @-webkit-keyframes fadeIn {
+  /* @-webkit-keyframes fadeIn {
     from {opacity: 0} 
     to {opacity: 1}
   }
@@ -139,17 +139,17 @@
   @keyframes fadeIn {
     from {opacity: 0} 
     to {opacity: 1}
-  }
+  } */
 
   /* Slide Out Animations */
   @-webkit-keyframes slideOut {
     from { right: 0; opacity: 1; }
-    to { right: -100px; opacity: 0; }
+    to { right: -100%; opacity: 1; }
   }
   
   @keyframes slideOut {
     from { right: 0; opacity: 1; }
-    to { right: -100px; opacity: 0; }
+    to { right: -100%; opacity: 1; }
   }
   
 
