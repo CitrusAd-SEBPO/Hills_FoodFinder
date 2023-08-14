@@ -20,7 +20,7 @@ span.onclick = function() {
   citrus_petco_hills_modal.classList.add('hideModal');
   setTimeout(() => {
     citrus_petco_hills_modal.style.display = "none";
-    }, 800); // Animation duration in milliseconds
+    }, 500); // Animation duration in milliseconds
 }
 
 
@@ -55,6 +55,6 @@ document.addEventListener('touchend', (event) => {
       citrus_petco_hills_modal.style.transform = "none"; // Reset the transform
       citrus_petco_hills_modal.style.animation = "none"; //
       citrus_petco_hills_modal.classList.add('hideModal');
-    }, 800); // Animation duration in milliseconds
+    }, 500); // Animation duration in milliseconds
   }
 });
