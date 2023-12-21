@@ -1,0 +1,320 @@
+/* Imported files */
+@import url(/Users/emran/Desktop/Shahin/Development/2023/DES-1118_PC_Petmate_ChuckIt_BP_9699735360/Petco_Petmate/font.css);
+/* All the common classes that have common styles */
+/* Need to remove the body styles during handoff */
+@import url(/Users/emran/Desktop/Shahin/Development/2023/DES-1118_PC_Petmate_ChuckIt_BP_9699735360/Petco_Petmate/font.css);
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Show hide class */
+.m-hide {
+  display: block;
+  width: 100%;
+}
+
+.d-hide {
+  display: none;
+  width: 100%;
+}
+
+.citrus_hills .flex-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+/* POV sections */
+.citrus_hillsBP_carousel {
+  overflow-x: hidden;
+  position: relative;
+  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  background: #fff;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col:nth-child(1) {
+  width: 20%;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col:nth-child(2) {
+  width: 50%;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col:nth-child(3) {
+  position: relative;
+  width: 30%;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col:nth-child(3) .citrus_petmate__pov--shots img:nth-child(2) {
+  position: absolute;
+  top: 30px;
+  left: -70px;
+  max-width: 350px;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_petmate__pov--text {
+  width: 100%;
+  text-align: left;
+  padding: 0 10px 0 20px;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_petmate__pov--text h1 {
+  font-size: 35px;
+  color: #000000;
+  padding: 15px 0;
+  line-height: 36px;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_petmate__pov--text p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_petmate__pov--logo {
+  padding: 0 20px 0 40px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .custom-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.citrus_hillsBP_carousel-controls .prev {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("prev.svg");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.citrus_hillsBP_carousel-controls .next {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("next.svg");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+
+.citrus_hillsBP_carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  left: calc(100% / 2 - 52px);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 5px !important;
+}
+
+.citrus_hillsBP_carousel-indicators span {
+  display: inline-block;
+  border: 2px solid #09205c;
+  padding: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.citrus_hillsBP_carousel-indicators span.active {
+  background-color: #09205c;
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+/* Medium devices */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_petmate__pov--text h1 {
+    font-size: 24px;
+    padding: 10px 0;
+    line-height: 28px !important;
+  }
+  .citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_petmate__pov--text p {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+}
+
+/* Tab devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner {
+    min-height: auto;
+  }
+  .citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col:nth-child(2) {
+    width: 40%;
+  }
+  .citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col:nth-child(3) {
+    width: 40%;
+  }
+  .citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col:nth-child(3) .citrus_petmate__pov--shots img:nth-child(2) {
+    position: absolute;
+    top: 30px;
+    max-width: 200px;
+    left: -35px;
+  }
+  .citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_petmate__pov--text h1 {
+    font-size: 19px;
+    padding: 0 0 10px;
+    line-height: 21px !important;
+  }
+  .citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_petmate__pov--text p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    line-height: 15px;
+  }
+  .citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_petmate__pov--cta a {
+    height: 44px;
+  }
+  .citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .pov1 .citrus_hillsBP_carousel-item__col:nth-child(2) .citrus_petmate__pov--text p {
+    max-width: 220px;
+  }
+  .citrus_petmate__pov--logo {
+    max-width: 90px;
+    padding-top: 10px;
+  }
+  .citrus_hillsBP_carousel-indicators {
+    display: none;
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+  /* Show hide class */
+  .m-hide {
+    display: none;
+  }
+  .d-hide {
+    display: block;
+  }
+ 
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col:nth-child(2) {
+    width: 60% !important;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col:nth-child(3) {
+    width: 40% !important;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col:nth-child(3) .citrus_petmate__pov--shots img:nth-child(2) {
+    left: -10px !important;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col .citrus_petmate__pov--cta {
+    padding: 10px 0 0 15px;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col .citrus_petmate__pov--cta a {
+    color: #000000 !important;
+    border: none !important;
+    min-width: auto;
+    margin: 0 15px;
+    padding: 0;
+    height: initial;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col .citrus_petmate__pov--text {
+    padding: 0;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col .citrus_petmate__pov--text h1, .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col .citrus_petmate__pov--text p {
+    max-width: 350px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 0;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col .citrus_petmate__pov--text h1 {
+    font-size: 21px;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col .citrus_petmate__pov--text p {
+    padding-bottom: 0;
+    font-size: 14px;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_petmate__pov--logo {
+    padding: 0px 0 0 10px !important;
+    margin: 0 !important;
+    max-width: 80% !important;
+  }
+  
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 320px) {
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col .citrus_petmate__pov--cta {
+    padding: 10px 0 0 10px;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col .citrus_petmate__pov--cta a {
+    color: #000000 !important;
+    border: none !important;
+    min-width: auto;
+    margin: 0 15px;
+    padding: 0;
+    height: initial;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col .citrus_petmate__pov--text h1 {
+    font-size: 18px;
+  }
+  .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col .citrus_petmate__pov--text p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=base.css.map */

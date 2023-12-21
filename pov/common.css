@@ -1,0 +1,190 @@
+/* Imported files */
+@import url(/Users/emran/Desktop/Shahin/Development/2023/DES-1118_PC_Petmate_ChuckIt_BP_9699735360/Petco_Petmate/font.css);
+/* All the common classes that have common styles */
+/* Need to remove the body styles during handoff */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Show hide class */
+.m-hide {
+  display: block;
+  width: 100%;
+}
+
+.d-hide {
+  display: none;
+  width: 100%;
+}
+
+.citrus_petmate {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.citrus_petmate a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.citrus_petmate img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.citrus_petmate h1, .citrus_petmate h2, .citrus_petmate h3 {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  line-height: initial !important;
+  margin: 0;
+}
+
+.citrus_petmate p {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  line-height: initial !important;
+  font-size: 13px;
+  color: #333333;
+  margin: 0;
+}
+
+.citrus_petmate .cta-box {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.citrus_petmate .cta-box a {
+  border-radius: 5px;
+  color: #fff;
+  background: #001952;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid #001952;
+  min-width: 209px;
+  margin: 0 15px;
+  height: 54px;
+}
+
+.citrus_petmate .cta-underline {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  cursor: pointer;
+  text-align: left;
+}
+
+.citrus_petmate .cta-underline a {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  cursor: pointer;
+}
+
+.citrus_petmate .cta-all-container {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+}
+
+.citrus_petmate .cta-all-container a {
+  color: #fff;
+}
+
+.citrus_petmate .cta-all-container span {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  padding: 10px;
+}
+
+.citrus_petmate .default-wrap {
+  width: 100%;
+}
+
+.citrus_petmate a:hover .cta-box a:hover {
+  background: #fff;
+  color: #001952;
+  border: 1px solid #001952;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.citrus_petmate a:hover .cta-box a:hover:hover {
+  background: #fff;
+  color: #001952;
+  border: 1px solid #001952;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.citrus_petmate .custom-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.citrus_petmate .container-full {
+  width: 100%;
+}
+
+.citrus_petmate .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.citrus_petmate__section-title {
+  padding: 40px 15px;
+}
+
+.citrus_petmate__section-title h2 {
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+  font-weight: 700;
+  line-height: initial;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+}
+
+.citrus_petmate__section-title h2 sup {
+  font-size: 16px;
+}
+
+.citrus_petmate__section-title p {
+  font-size: 16px;
+  color: #000000;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.citrus_petmate .section-padding30 {
+  padding: 30px 0;
+}
+/*# sourceMappingURL=common.css.map */

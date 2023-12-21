@@ -40,11 +40,44 @@
 }
 
 .citrus_petco_hills_bp__hero--copy{
-    padding: 4% 5%;
+    padding: 4% 3% 4% 5%;
+}
+
+.citrus_petco_hills_bp__hero--copy .cta-box{
+    flex-wrap: wrap !important;
+    padding: 0;
+    border: none;
+    width: auto;
+    background: unset;
+    justify-content: flex-start;
+}
+
+.citrus_petco_hills_bp__hero--copy .cta-box a{
+    width: auto;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    color: #000000;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    border: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.citrus_petco_hills_bp__hero--copy .cta-box a:nth-child(2){
+    margin-left: 24px;
 }
 
 .citrus_petco_hills_bp__hero--shots{
     padding: 30px 4% 0 0;
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 
