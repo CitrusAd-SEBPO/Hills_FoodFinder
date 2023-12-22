@@ -1,0 +1,1337 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.citrusHills__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.citrusHills__wrapper img {
+  max-width: 100%;
+}
+
+.citrusHills__wrapper a {
+  text-decoration: none;
+}
+
+.citrusHills__wrapper a:hover {
+  text-decoration: none;
+}
+
+.citrusHills__wrapper h1,
+.citrusHills__wrapper h2,
+.citrusHills__wrapper h3,
+.citrusHills__wrapper h4,
+.citrusHills__wrapper h5,
+.citrusHills__wrapper h6 {
+  padding: 0;
+  margin: 0;
+  line-height: initial;
+}
+
+.citrusHills__wrapper p {
+  padding: 0;
+  margin: 0;
+  line-height: initial;
+}
+
+.citrusHills__sectionGap {
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.citrusHills__sectionTitle {
+  margin: 0;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.citrusHills__sectionSubhead {
+  text-align: center;
+  font-size: 16px;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  color: black;
+  padding-bottom: 10px !important;
+}
+
+.citrusHills__container {
+  padding-bottom: 40px;
+}
+
+.citrusHills__commonCTA--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.citrusHills__commonCTA {
+  color: #001952;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 212px;
+  height: 55px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: 900;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+@media screen and (max-width:1120px) {
+  .citrusHills__commonCTA {
+    width: 170px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .citrusHills__commonCTA {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .citrusHills__commonCTA {
+    color: #fff;
+    text-transform: none;
+    background-color: unset;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-weight: 900;
+    margin: 0 auto;
+  }
+}
+
+/* End Common CSS */
+
+/* Take A Quiz & Lifestyle Section */
+.citrusHills_lifestyle {
+  background-color: #1F52A0;
+  margin-top: 20px;
+}
+
+.citrusHills_lifestyleRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.citrusHills_lifestyleRow .order1 {
+  order: 1;
+}
+
+.citrusHills_lifestyleRow .order2 {
+  order: 2;
+}
+
+.citrusHills_lifestyleLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.citrusHills__desktopImage {
+  display: block;
+  width: 418px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.citrusHills__mobImage {
+  display: none;
+}
+
+.citrusHills_lifestyleTextContainer h2 {
+  color: #fff;
+}
+
+.citrusHills_lifestyleTextContainer p {
+  padding: 20px 0;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  color: #fff;
+}
+
+@media screen and (max-width:768px) {
+  .citrusHills_lifestyleTextContainer {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:520px) {
+  .citrusHills_lifestyleTextContainer {
+    width: 75%;
+    margin: auto;
+    padding: 30px 0;
+  }
+
+  .citrusHills__desktopImage {
+    display: none;
+  }
+
+  .citrusHills__mobImage {
+    display: block;
+  }
+
+  .citrusHills_lifestyleRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .citrusHills_lifestyleRow .order1 {
+    order: 2;
+  }
+
+  .citrusHills_lifestyleRow .order2 {
+    order: 1;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .citrusHills_lifestyleTextContainer {
+    width: 70%;
+  }
+
+  .citrusHills_lifestyleTextContainer p {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* End Take A Quiz & Lifestyle Section */
+
+/* FAQ Section start */
+.citrusHills__FAQ {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0px auto 30px;
+}
+
+.citrusHills__faqRow {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 315px 30px auto;
+  grid-template-columns: 315px auto;
+  grid-gap: 30px;
+}
+
+.citrusHills__faqLeft {
+  width: 315px;
+}
+
+.citrusHills__faqImage-box img {
+  max-width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.citrusHillsFaq__iframe {
+  position: relative;
+}
+
+.citrusHillsFaq__iframe iframe {
+  width: 313px;
+  min-width: 100%;
+  margin: auto;
+  height: 356px;
+  border-radius: 8px;
+  border: none;
+  /* Newly Added */
+  position: absolute;
+  /* Newly Added */
+  top: 0;
+  /* Newly Added */
+  left: 0;
+}
+
+
+/* Video Popup */
+.citrusHills .citrusHills-yt-video {
+  position: relative;
+}
+
+.citrusHills-yt-video button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  /* height: 0; */
+  background: unset;
+}
+
+.citrusHills .citrusHills-yt-video button,
+.citrusHills .citrusHills-yt-video button:focus-visible {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 !important;
+}
+
+.citrusHills .show-video {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 10px;
+  padding-left: 0;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.citrusHills .show-video span:hover {
+  color: #fff;
+  background: #e4425c;
+  border: 1px solid #e4425c;
+}
+
+.citrusHills .show-video iframe {
+  min-height: 100%;
+}
+
+.citrusHills .education-single-item .show-video iframe {
+  min-height: 225px;
+}
+
+.citrusHills .citrus-upgrade-video-area .show-video {
+  top: -30px;
+}
+
+.citrusHills .citrus-upgrade-video-area .show-video iframe {
+  min-height: 280px;
+}
+
+.citrusHills .citrus-bg-sky .show-video iframe {
+  min-height: 270px;
+}
+
+.citrus-benefits-single-item .citrusHills-yt-video {
+  position: relative;
+}
+
+.citrusHills-yt-video .button {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.citrus-benefits-single-item .citrusHills-yt-video button,
+.citrus-benefits-single-item .citrusHills-yt-video button:focus-visible {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.citrus-benefits-single-item .show-video {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.citrus-benefits-single-item .show-video span {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 99999;
+  color: #333;
+  background: #fff;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #efefef;
+  font-size: 20px;
+  padding: 1px 0 0;
+  cursor: pointer;
+}
+
+.citrus-benefits-single-item .show-video span:hover {
+  color: #fff;
+  background: #e4425c;
+  border: 1px solid #e4425c;
+}
+
+.citrus-benefits-single-item .show-video iframe {
+  width: 100%;
+  min-height: 180px;
+}
+
+.citrus-benefits-single-item .show-video iframe {
+  width: 100%;
+  min-height: 180px;
+}
+
+/* default css */
+
+/* FAQ start */
+.citrusHills__FAQ {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0px auto 30px;
+  padding-top: 30px;
+}
+
+.citrusHills__faqRow {
+  display: grid;
+  grid-template-columns: 27% 70%;
+  grid-gap: 30px;
+}
+
+
+.citrusHills__faqImage-box img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.citrusHills__faqRight {
+  margin-top: 20px;
+}
+
+.citrusHills__faqTitle h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 900;
+  color: #001952;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+}
+
+.citrusHills__faqTitle p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  padding-bottom: 18px;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  padding-right: 9%;
+}
+
+/* accordion style */
+.citrusHills__accordion {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.citrusHills__accordion-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.citrusHills__accordion-item:first-child {
+  border-top: 0;
+}
+
+.citrusHills__accordion-title {
+  padding: 30px 10px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.citrusHills__accordion-title h3 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #001952;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  padding-right: 20px;
+}
+
+.citrusHills__accordion-icon {
+  right: 10px;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 50px;
+  font-weight: 700;
+  color: #001952;
+  cursor: pointer;
+}
+
+.citrusHills__accordion-content {
+  padding: 0 10px 0;
+  height: 0;
+  display: flex;
+  justify-content: space-between;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 16px;
+}
+
+.citrusHills__accordion-content p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  color: #000000;
+}
+
+.citrusHills_accordion_cta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 30px;
+  padding-top: 30px;
+  gap: 35px;
+}
+
+.citrusHills__sectionCTA a {
+  width: 140px;
+  height: 55px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #00205B;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: 900;
+}
+
+.citrusHills__accordion-item.active .citrusHills__accordion-content {
+  height: max-content;
+  margin-bottom: 10px;
+}
+
+.citrusHills__accordion-item .citrusHills__accordion-content {
+  padding-right: 12%;
+}
+
+
+.citrusHills__accordion-icon:before {
+  content: "+";
+}
+
+.citrusHills__accordion-item.active .citrusHills__accordion-icon:before {
+  content: "-";
+}
+
+.citrusHills__list {
+  list-style: disc;
+  margin: 10px auto 0px;
+}
+
+.citrusHills__list li {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000;
+}
+
+.citrusHills__disclaimer.spotlightFaq-dis {
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  text-align: left;
+}
+
+@media all and (min-width: 922px) and (max-width: 1100px) {
+  .spotlightCopy h1 {
+    font-size: 22px;
+  }
+
+  .spotlightCopy h1 span {
+    font-size: 44px;
+  }
+
+  .spotlightCopy p {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .citrusHills__FAQ {
+    width: 94%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .citrusHills__banner {
+    padding-top: 20px;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 921px) {
+  .citrusHills__heroImage-copy {
+    width: 96%;
+    margin: auto 2%;
+  }
+
+  .spotlightCopy h1 {
+    font-size: 20px;
+  }
+
+  .spotlightCopy h1 span {
+    font-size: 40px;
+  }
+
+  .spotlightCopy p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* faq section */
+  .citrusHills__faqRow {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 0px;
+    padding: 0 10px;
+  }
+
+  .citrusHills__faqImage-box {
+    text-align: center;
+  }
+
+  .citrusHills__disclaimer.spotlightFaq-dis {
+    padding-left: 10px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .citrusHills__desktop-version {
+    display: none;
+  }
+
+  .citrusHills__mobile-version {
+    display: block;
+  }
+
+  .citrusHills__sectionTitle,
+  .citrusHills__faqTitle h2 {
+    font-size: 18px;
+  }
+
+  .citrusHills__faqTitle p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-bottom: 18px;
+    font-family: "PetcoCircularTT-Regular", arial !important;
+    padding-right: 12%;
+  }
+
+  /* hero banner */
+  .citrusHills__heroImage-copy {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-left {
+    column-gap: 0px;
+  }
+
+  .spotlightCopy h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .spotlightCopy h1 span {
+    font-size: 32px;
+  }
+
+  .spotlightCopy p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+
+  .hero-rightCTA a {
+    min-width: max-content;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: left;
+    border: none;
+    background: none;
+  }
+
+  .citrusHills__disclaimer.hero {
+    color: #fff;
+  }
+
+  .hero-rightCTA a:hover {
+    background: none;
+    color: #fff;
+  }
+
+  /* faq section */
+  .citrusHills__FAQ {
+    padding-top: 0;
+  }
+
+  .citrusHills__faqRight {
+    margin-top: 0px;
+  }
+
+  .citrusHills__faqRow {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 0px;
+    padding: 0 10px;
+  }
+
+  .citrusHills__faqImage-box {
+    text-align: center;
+  }
+
+  .citrusHills__disclaimer.spotlightFaq-dis {
+    padding-left: 10px;
+  }
+
+  .citrusHills_accordion_cta {
+    justify-content: space-evenly;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .citrusHills__sectionCTA a {
+    color: #001952;
+    text-transform: capitalize;
+    background: unset;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-weight: 900;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 476px) and (max-width: 768px) {
+
+  /* hero banner */
+  .citrusHills__heroImage-copy .citrusHills__mobile-version {
+    display: none;
+  }
+
+  .citrusHills__heroImage-copy {
+    width: 90%;
+    margin: auto 5%;
+  }
+
+  .spotlightCopy h1 {
+    font-size: 28px;
+  }
+
+  .spotlightCopy h1 span {
+    font-size: 60px;
+  }
+
+  .spotlightCopy p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+
+/* End FAQ Right Accordion */
+@media all and (min-width: 922px) and (max-width: 1200px) {
+  .citrusHills__FAQ {
+    width: 94%;
+  }
+
+  .citrusHills__faqRow {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    padding: 0 20px;
+    /* align-items: center; */
+  }
+}
+
+@media screen and (max-width: 921px) {
+  .citrusHills__faqRow {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    padding: 0 20px;
+    /* align-items: center; */
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  .citrusHills__sectionTitle {
+    font-size: 20px;
+  }
+
+  .citrusHills__faqTitle h2 {
+    font-size: 24px;
+  }
+
+  /* faq section */
+
+  .citrusHills__faqRow {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    grid-gap: 0px;
+    padding: 0;
+    /* align-items: center; */
+  }
+
+  .citrusHills__disclaimer.spotlightFaq-dis {
+    padding-left: 10px;
+  }
+
+  /* faq section */
+  .citrusHills__FAQ {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .citrusHills__accordion-title {
+    padding-left: 0;
+  }
+
+  .citrusHills__accordion-title h3 {
+    font-size: 18px;
+  }
+
+  .citrusHills__accordion-content {
+    padding-left: 0;
+    /* padding-right: 12%; */
+  }
+
+  .citrusHills__faqRight {
+    margin-top: 20px;
+  }
+
+  .citrusHills__faqRow {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    grid-gap: 0px;
+    padding: 0 10px;
+    /* align-items: center; */
+  }
+
+  .citrusHills__faqImage-box {
+    text-align: center;
+  }
+
+  .citrusHills__disclaimer.spotlightFaq-dis {
+    padding-left: 10px;
+  }
+
+  .citrusHills__heroCTA {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .citrusHills__faqRow {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    grid-gap: 0px;
+    padding: 0 10px;
+    /* align-items: center; */
+  }
+
+  .citrusHills__faqLeft {
+    overflow-x: auto;
+  }
+
+  .citrusHills__faqImage-box {
+    text-align: center;
+    width: 890px;
+    overflow-x: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  .citrusHills__faqImage-box img {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .citrusHills__faqImage-box .citrusHillsFaq__iframe img {
+    margin-top: 2px;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .citrusHills__faqLeft::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .citrusHills__faqLeft {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    width: 100%;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  }
+
+  .citrusHills__banner {
+    width: 440px;
+    padding-bottom: 0;
+    padding-top: 2px;
+  }
+
+  .citrusHillsFaq__iframe {
+    width: 440px;
+  }
+
+  /* section cta style */
+  .citrusHills__heroCTA a {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    line-height: 32px;
+    background: none;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+
+  .citrusHills__accordionCTA a {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    line-height: 32px;
+    background: none;
+    border: none;
+    color: #001952;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+
+  .citrusHills__videoCTA {
+    margin-top: 0px;
+  }
+
+  .citrusHills__videoCTA a {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    line-height: 32px;
+    background: none;
+    border: none;
+    color: #001952;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+
+  .citrusHills__video {
+    width: 95%;
+    margin: 20px auto 40px;
+  }
+
+  .citrusHills__videoRow {
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+    -ms-grid-columns: unset;
+    grid-template-columns: unset;
+  }
+
+  .citrusHills__videoRow>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .citrusHills_top_video img {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    min-height: 440px;
+  }
+
+  .citrusHills .citrusHills-yt-video button,
+  .citrusHills .citrusHills-yt-video button:focus-visible {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .citrusHills .show-video-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .citrusHills .show-video-top span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 99999;
+    color: #333;
+    background: #fff;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #efefef;
+    font-size: 20px;
+    padding: 1px 0 0;
+    cursor: pointer;
+    display: none;
+  }
+
+  .citrusHills .show-video-top span:hover {
+    color: #fff;
+    background: #e4425c;
+    border: 1px solid #e4425c;
+  }
+
+  .citrusHills .show-video-top iframe {
+    width: 100%;
+    min-height: 460px;
+  }
+
+  .citrusHills__videoText {
+    min-height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-left: 25px;
+  }
+
+  .citrusHillsFaq__iframe {
+    position: relative;
+  }
+
+  .citrusHills .show-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .citrusHills .show-video span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 99999;
+    color: #333;
+    background: #fff;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #efefef;
+    font-size: 20px;
+    padding: 1px 0 0;
+    cursor: pointer;
+    display: none;
+  }
+
+  .citrusHills .show-video span:hover {
+    color: #fff;
+    background: #e4425c;
+    border: 1px solid #e4425c;
+  }
+
+  .citrusHills .show-video iframe {
+    width: 100%;
+    min-height: 440px;
+  }
+
+  .citrusHillsFaq__iframe iframe {
+    width: 100%;
+    min-width: 100%;
+    margin: auto;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    left: 0;
+  }
+
+  .citrusHills .show-video iframe {
+    min-height: 494px;
+  }
+}
+
+@media screen and (min-width:521px) and (max-width:600px) {
+  .citrusHills__faqImage-box {
+    width: 650px;
+  }
+}
+
+@media screen and (min-width:426px) and (max-width:520px) {
+  .citrusHills__faqImage-box {
+    width: 580px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .citrusHills__faqRow {
+    padding: 0;
+  }
+
+  .citrusHills .show-video iframe {
+    min-height: 338px;
+  }
+
+  .citrusHills__faqImage-box {
+    width: 470px;
+    padding-left: 10px;
+  }
+
+  .citrusHills__faqTitle {
+    padding-left: 10px;
+  }
+
+  .citrusHills__accordion-item {
+    padding-left: 10px;
+  }
+
+  .citrusHills__banner {
+    width: 300px;
+    padding-bottom: 0;
+  }
+
+  .citrusHillsFaq__iframe {
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 320px) {
+
+  .citrusHills__faqImage-box {
+    width: 400px;
+  }
+
+  .citrusHills__banner {
+    width: 280px;
+    padding-bottom: 0;
+  }
+
+  .citrusHillsFaq__iframe {
+    width: 280px;
+  }
+}
+
+/* Start Vet Transform */
+.citrusHills__vet-transform_desktopImage {
+  display: block;
+  max-height: 327px;
+}
+
+.citrusHills__vet-transform_mobImage {
+  display: none;
+}
+
+.citrusHills_vet-transform {
+  background-color: #1F52A0;
+  padding: 20px 0;
+}
+
+.citrusHills_vet-transform_row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.citrusHills_vet-transform_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.citrusHills_vet-transform_TextContainer {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.citrusHills_prescrition_diet {
+  width: 143px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.citrusHills_vet-transform_TextContainer h2 {
+  color: #fff;
+}
+
+.citrusHills_vet-transform_TextContainer p {
+  padding: 20px 0;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* .citrusHills_vet-transform_TextContainer button {
+  max-width: 282px;
+  margin: 0 auto;
+  width: 100%;
+} */
+
+.citrusHills_vet-transform_TextContainer a div {
+  max-width: 282px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.citrusHills__vet-transform_desktopImage {
+  display: block;
+}
+
+.citrusHills__vet-transform_mobImage {
+  display: none;
+}
+
+
+@media screen and (max-width:768px) {
+  .citrusHills_vet-transform_TextContainer {
+    width: 75%;
+    margin: auto;
+  }
+
+  .citrusHills__vet-transform_desktopImage {
+    display: none;
+  }
+
+  .citrusHills__vet-transform_mobImage {
+    display: block;
+  }
+}
+
+@media screen and (max-width:620px) {
+  .citrusHills_vet-transform_TextContainer {
+    width: 75%;
+    margin: auto;
+    padding: 30px 0;
+  }
+
+  .citrusHills__vet-transform_desktopImage {
+    display: none;
+  }
+
+  .citrusHills__vet-transform_mobImage {
+    display: block;
+    padding: 15px 0;
+  }
+
+  .citrusHills_vet-transform_row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .citrusHills_vet-transform_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+  }
+
+  .citrusHills_vet-transform_row .order1 {
+    order: 2;
+  }
+
+  .citrusHills_vet-transform_row .order2 {
+    order: 1;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .citrusHills_vet-transform_TextContainer {
+    width: 86%;
+    margin: 0 auto;
+  }
+
+  .citrusHills_vet-transform_TextContainer p {
+    padding: 20px 10px;
+  }
+}
+
+/* End Vet Transform */
