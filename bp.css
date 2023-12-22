@@ -78,10 +78,15 @@
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
+    min-width: 180px;
 }
 
 .citrus_petco_hills_bp__hero--copy .cta-box a:nth-child(2){
-    margin-left: 24px;
+    margin-left: 22px;
+}
+
+.citrus_petco_hills_bp__hero--copy .cta-box:focus-visible{
+    outline: 0;
 }
 
 .citrus_petco_hills_bp__hero--shots{

@@ -157,7 +157,7 @@
 
 .citrus_hillsBP_carousel-indicators {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: calc(100% / 2 - 52px);
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
@@ -233,9 +233,9 @@
     max-width: 90px;
     padding-top: 10px;
   }
-  .citrus_hillsBP_carousel-indicators {
+  /* .citrus_hillsBP_carousel-indicators {
     display: none;
-  }
+  } */
 }
 
 /* Mobile devices */
