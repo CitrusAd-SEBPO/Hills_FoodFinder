@@ -4,13 +4,13 @@
 }
 
 .citrus_hills .citrus_petco_hills_bp__hero{
-    background-image: url("img/bp/citrus-petco-hills-curve-dsk.png");
+    background-image: url("img/bp/citrus-petco-hills-curve-dsk1.png");
     background-size: cover;
     background-repeat: no-repeat;
-    align-items: flex-start;
-    min-height: 383px;
+    align-items: flex-start !important;
     max-width: 1440px;
     margin: 0 auto;
+    min-height: 330px;
 }
 
 .citrus_petco_hills_bp__hero h1, p{
@@ -31,25 +31,34 @@
     font-weight: 400;
     line-height: normal;
     margin: 0;
-    padding: 10px 0 20px;
+    padding: 10px 0 0;
     color: #fff;
 }
 
+.citrus_petco_hills_bp__hero .disclaimer{
+    padding: 0;
+    font-size: 12px;
+    font-family: "PetcoCircularTT-Regular", arial !important;
+    font-weight: 500;
+}
+
 .citrus_petco_hills_bp__hero--logo{
-    padding: 4% 0 0 4%;
+    padding: 2% 0 0 3%;
+    min-width: 10%;
 }
 
 .citrus_petco_hills_bp__hero--copy{
-    padding: 4% 3% 4% 5%;
+    padding: 2% 0% 2% 2%;
+    min-width: 55%;
 }
 
 .citrus_petco_hills_bp__hero--copy .cta-box{
     flex-wrap: wrap !important;
-    padding: 0;
+    padding: 20px 0;
     border: none;
     width: auto;
     background: unset;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
 }
 
 .citrus_petco_hills_bp__hero--copy .cta-box a{
@@ -68,6 +77,7 @@
     margin: 0;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 700;
 }
 
 .citrus_petco_hills_bp__hero--copy .cta-box a:nth-child(2){
@@ -75,9 +85,13 @@
 }
 
 .citrus_petco_hills_bp__hero--shots{
-    padding: 30px 4% 0 0;
+    padding: 30px 0 0 0;
     max-width: 550px;
     margin: 0 auto;
+}
+
+.pov1 .citrus_petco_hills_bp__hero--shots{
+    max-width: 420px;
 }
 
 

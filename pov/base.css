@@ -1,12 +1,4 @@
-/* Imported files */
-@import url(/Users/emran/Desktop/Shahin/Development/2023/DES-1118_PC_Petmate_ChuckIt_BP_9699735360/Petco_Petmate/font.css);
-/* All the common classes that have common styles */
-/* Need to remove the body styles during handoff */
-@import url(/Users/emran/Desktop/Shahin/Development/2023/DES-1118_PC_Petmate_ChuckIt_BP_9699735360/Petco_Petmate/font.css);
-body {
-  margin: 0;
-  padding: 0;
-}
+
 
 /* Show hide class */
 .m-hide {
@@ -67,6 +59,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
+}
+
+.citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .default-wrap {
+  width: 100%;
+  min-height: 330px;
 }
 
 .citrus_hillsBP_carousel .citrus_hillsBP_carousel-inner .citrus_hillsBP_carousel-item .citrus_hillsBP_carousel-item__col:nth-child(1) {

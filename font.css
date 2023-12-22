@@ -13,11 +13,14 @@
  */
 
 
+ @font-face {
+  font-family: PetcoCircularTT-Regular;
+  src: url(../fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
+    url(../fonts/PetcoCircularTT-Regular.woff) format("woff");
+}
+
 @font-face {
-    font-family: PetcoCircularCAP-Regular;
-    src: url(../fonts/PetcoCircularCAP-Regular) format("otf");
-  }
-  @font-face {
-    font-family: PetcoCircularCAP-Bold;
-    src: url(../fonts/PetcoCircularCAP-Bold) format("otf");
-  }
+  font-family: PetcoCircularTT-Bold;
+  src: url(../fonts/PetcoCircularTT-Bold.woff2) format("woff2"),
+    url(../fonts/PetcoCircularTT-Bold.woff) format("woff");
+}
