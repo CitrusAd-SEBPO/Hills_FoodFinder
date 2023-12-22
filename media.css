@@ -182,7 +182,7 @@
    .citrus_hills .citrus_petco_hills_bp__hero{
         background-image: url("img/bp/citrus-petco-hills-curve-mob.png");
         flex-wrap: wrap !important;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
 
     .citrus_petco_hills_bp__hero--logo{

@@ -1,0 +1,673 @@
+
+    .citrus_hillsBP_all-overflow a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .citrus_hillsBP_all-overflow {
+        overflow: hidden !important;
+    }
+
+    .citrus_hillsBP_containers .cta-box {
+        width: 210px;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+
+    .citrus_hillsBP_containers .cta-box a {
+        border-radius: 5px;
+        color: #fff;
+        background: #001952;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        font-family: "PetcoCircularTT-Bold", arial !important;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: 1px solid #001952;
+    }
+
+    .citrus_hillsBP_containers .cta-box a:hover {
+        background: #fff;
+        color: #001952;
+        border: 1px solid #001952;
+        transition: 0.5s ease-in-out;
+    }
+
+    @font-face {
+        font-family: PetcoCircularTT-Regular;
+        src: url(assets/fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
+            url(assets/fonts/PetcoCircularTT-Regular.woff) format("woff");
+    }
+
+    @font-face {
+        font-family: PetcoCircularTT-Bold;
+        src: url(assets/fonts/PetcoCircularTT-Bold.woff2) format("woff2"),
+            url(assets/fonts/PetcoCircularTT-Bold.woff) format("woff");
+    }
+
+    p {
+        color: #000000;
+        font-size: 16px;
+        font-family: "PetcoCircularTT-Regular", arial !important;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+
+    /**************************************/
+    /************ Shopper navigation  Area*************/
+    /************************************/
+    .citrus_hillsBP_shopper_nav_area {
+        padding-top: 42px;
+        padding-bottom: 65px;
+        overflow: hidden;
+    }
+
+    .citrus_hillsBP_shopper_container {
+        max-width: 1255px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .citrus_hillsBP_cmon-heading {
+        text-align: center;
+    }
+
+    .citrus_hillsBP_parent_button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .citrus_hillsBP_paren_list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .citrus_hillsBP_paren_list img {
+        max-width: 433px;
+        width: 100%;
+        height: auto;
+    }
+
+    .citrus_hillsBP_paren_list img {
+        max-width: 433px;
+        width: 100%;
+        height: auto;
+        border: 5px solid transparent;
+    }
+
+    .citrus_hillsBP_paren_list>span {
+        color: #000;
+        font-family: "PetcoCircularTT-Bold", arial !important;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        padding-top: 10px;
+    }
+
+    .MiCS_cat_best_tab_item_active_citrus_hillsBP {
+        background: transparent;
+        color: #000 !important;
+    }
+
+    .MiCS_cat_best_tab_item_active_citrus_hillsBP span {
+        color: #001952;
+        border-bottom: 8px solid #001952;
+    }
+
+    .filterBestDogDiv_citrus_hillsBP {
+        display: none;
+    }
+
+    .filterBestCatDiv_citrus_hillsBP {
+        float: left;
+        display: none;
+    }
+
+    .filterDogFoodDiv_citrus {
+        float: left;
+        display: none;
+    }
+
+    .filterCatFoodDiv_citrus21_citrus_hillsBP {
+        float: left;
+        display: none;
+    }
+
+    .citrus_hillsBPinner-tab-imgBody button{
+        border: 0;
+        padding: 25px 0 0;
+        background: none;
+        text-decoration: underline;
+        font-family: "PetcoCircularTT-Bold", arial !important;
+        color: #001952;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    .citrus_hillsBPinner-tab-imgBody button:focus-visible{
+        
+    }
+
+    /*cat food tabs*/
+    .citrus_hillsBP_show {
+        display: block;
+    }
+
+    .MiCS_tab_item_active_citrus_hillsBP .citrus_catagory-line-main h4 {
+        color: #001952;
+        border-bottom: 8px solid #001952;
+    }
+
+    .MiCS_cat_food_tab_citrus21_active_citrus21_citrus_hillsBP .citrus_catagory-line-main h4 {
+        color: #001952;
+        border-bottom: 8px solid #001952;
+    }
+
+    .citrus_hillsBP_dog_main_flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 40px;
+        border-bottom: 1px solid #021b4e;
+        margin-bottom: 25px;
+    }
+
+    .citrus_hillsBP_tab {
+        padding-top: 12px;
+    }
+
+    .citrus_catagory-line-main>h4 {
+        color: #9b9b9b;
+        font-size: 14px;
+        font-family: "PetcoCircularTT-Bold", arial !important;
+        display: block;
+        padding: 20px 0px;
+        text-transform: uppercase;
+        margin: 0px 50px;
+        border-bottom: 8px solid transparent;
+        cursor: pointer;
+    }
+
+    .citrus_hillsBP_dog_inner__content-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: flex-start;
+    }
+
+    .citrus_hillsBPinner-tab-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .citrus_hillsBP__contents {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .citrus_hillsBPinner-item>a {
+        color: #220c0b;
+        font-size: 15px;
+        font-family: "PetcoCircularTT-Regular", arial !important;
+        font-weight: 400;
+        display: block;
+        padding-top: 20px;
+        margin-top: 18px;
+        margin-bottom: 0;
+        min-height: 76px;
+        width: 100%;
+        line-height: 1.3;
+    }
+
+    .citrus_hillsBPinner-item>p {
+        color: #220c0b;
+        font-size: 15px;
+        font-family: "PetcoCircularTT-Regular", arial !important;
+        line-height: 18px !important;
+        padding: 20px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        max-height: 4em;
+        margin-bottom: 24px;
+    }
+
+    .citrus_hillsBPinner-item .shop-btn>a {
+        color: #001952;
+        font-size: 16px;
+        font-family: "PetcoCircularTT-Bold", arial !important;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+
+    /*-----------------------------------*/
+    /*------------ Splide Css-  //imran ----------*/
+    /*-----------------------------------*/
+    .splide__list {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        height: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .splide.is-initialized:not(.is-active) .splide__list {
+        display: block;
+    }
+
+    .splide {
+        outline: none;
+        position: relative;
+        visibility: hidden;
+    }
+
+    .splide.is-initialized,
+    .splide.is-rendered {
+        visibility: visible;
+    }
+
+    .splide__slide {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        list-style-type: none !important;
+        margin: 0;
+        outline: none;
+        position: relative;
+    }
+
+    .splide__slide img {
+        vertical-align: bottom;
+        min-height: 100px;
+    }
+
+    .splide__track {
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+    }
+
+    .splide--draggable>.splide__track {
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    .splide--fade>.splide__track>.splide__list {
+        display: block;
+    }
+
+    .splide--fade>.splide__track>.splide__list>.splide__slide {
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+
+    .splide--fade>.splide__track>.splide__list>.splide__slide.is-active {
+        opacity: 1;
+        position: relative;
+        z-index: 1;
+    }
+
+    .splide--rtl {
+        direction: rtl;
+    }
+
+    .splide--ttb.is-active>.splide__track>.splide__list {
+        display: block;
+    }
+
+    .splide__arrow {
+        -ms-flex-align: center;
+        -webkit-box-align: center;
+        align-items: center;
+        background: #ccc;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        height: 2em;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        opacity: 0.7;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 2em;
+        z-index: 1;
+    }
+
+    .splide__arrow svg {
+        fill: #000;
+        height: 1.2em;
+        width: 1.2em;
+    }
+
+    .splide__arrow:hover {
+        opacity: 0.9;
+    }
+
+    .splide__arrow:focus {
+        outline: none;
+    }
+
+    .splide__arrow--prev {
+        left: 1em;
+    }
+
+    .splide__arrow--prev svg {
+        -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .splide__arrow--next {
+        right: 1em;
+    }
+
+    /* End splide */
+    /* -------------------------------- */
+
+    /*******************************
+product tab carousal style start
+*********************************/
+
+    .citrus__tab_item span {
+        display: block;
+    }
+
+    .citrus__tab_item.citrus_tab_item_active {
+        color: #001952;
+        border-bottom: 8px solid #001952;
+        margin-top: 0px;
+    }
+
+    .cirtus_product_tabs_22 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .cirtus_product_tabs_22 .splide__arrow--next {
+        right: 0px;
+    }
+
+    .cirtus_product_tabs_22 .splide__arrow--prev {
+        left: 2px;
+    }
+
+    .cirtus_product_tabs_22 .splide__arrow svg {
+        fill: #122359;
+    }
+
+    .cirtus_product_tabs_22 .splide__arrow {
+        -ms-flex-align: center;
+        -webkit-box-align: center;
+        align-items: center;
+        background: transparent;
+        border: 1px solid #122359;
+        border-radius: 50%;
+        cursor: pointer;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        height: 2.2em;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        opacity: 1;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 2.2em;
+        z-index: 1;
+    }
+
+    .citrus--main-tab-content {
+        width: 1095px;
+        max-width: 95%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .citrus__tab_item span {
+        display: block;
+    }
+
+    .citrus__tab_item {
+        text-transform: uppercase;
+        padding: 12px 20px;
+        margin: 0px 10px;
+        font-size: 14px;
+        text-decoration: none;
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+        color: #6e6b6b;
+        font-family: "PetcoCircularTT-Regular", arial !important;
+        font-weight: 700;
+        line-height: 1.3;
+        text-align: center;
+        border-bottom: 8px solid #fff;
+        border-radius: 0;
+    }
+
+    .citrus__tab_item.citrus__tab_item_active {
+        color: #001952;
+        border-bottom: 8px solid #001952;
+        margin-top: 12px;
+    }
+
+    .cirtus__tabs,
+    .cirtus_cat_tabs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .citrus__tab_content_item {
+        display: none;
+    }
+
+    .citrus__tab_content_item>a,
+    .citrus__tab_content_item>p {
+        font-family: "PetcoCircularTT-Regular", arial !important;
+        text-decoration: none;
+    }
+
+    .citrus__tab_content_item.citrusTabshow {
+        display: block;
+    }
+
+    .citrus-inner-img22 {
+        padding: 0 0px;
+        margin-left: 0px;
+    }
+
+    .citrus-inner-img22>a img {
+        width: 100%;
+        height: auto;
+    }
+
+    .citrus__tab_content_item.citrus_row_opacity_0 {
+        opacity: 0;
+    }
+
+    .cirtus__tabs .splide__pagination,
+    .cirtus_cat_tabs .splide__pagination {
+        display: none;
+    }
+
+    .citrus_product_info22>p {
+        font-family: "PetcoCircularTT-Regular", arial !important;
+        font-size: 13px;
+        color: #333333;
+        min-height: 70px;
+        display: block;
+        margin: 0;
+        margin-top: 18px;
+    }
+
+    .citrus--tab-product>button {
+        color: #001952;
+        font-size: 16px;
+        display: block;
+        font-family: "PetcoCircularTT-Bold", arial !important;
+        text-decoration: underline;
+        font-weight: bold;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-left: -6px;
+        text-align: left;
+    }
+
+    .cirtus__tabs .splide__arrow--next,
+    .cirtus_cat_tabs .splide__arrow--next {
+        right: 0px;
+    }
+
+    .cirtus__tabs .splide__arrow--prev,
+    .cirtus_cat_tabs .splide__arrow--prev {
+        left: 2px;
+    }
+
+    .cirtus__tabs .splide__arrow svg,
+    .cirtus_cat_tabs .splide__arrow svg {
+        fill: #122359;
+    }
+
+    .cirtus__tabs .splide__arrow,
+    .cirtus_cat_tabs .splide__arrow {
+        -ms-flex-align: center;
+        -webkit-box-align: center;
+        align-items: center;
+        background: transparent;
+        border: 1px solid #122359;
+        border-radius: 50%;
+        cursor: pointer;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        height: 2.2em;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        opacity: 1;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 2.2em;
+        z-index: 1;
+    }
+
+    /* ----------------------------
+End product tab carousal style
+--------------------------------- */
+
+    /**************************************/
+    /************ Media Query  Area*************/
+    /************************************/
+
+
+
+
+
+    @media all and (max-width: 767px) {
+        .citrus_hillsBP_mobile_hide {
+            display: none;
+        }
+
+        .citrus_hillsBP_desktop_hide {
+            display: block;
+        }
+
+       
+
+        .citrus__tab_content_item {
+            padding-left: 10px;
+        }
+    }
+
+
+    .cirtus__tabs .splide__arrow:disabled {
+        opacity: 0;
+    }

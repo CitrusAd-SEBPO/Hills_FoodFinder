@@ -434,6 +434,7 @@ body {
   padding-bottom: 18px;
   font-family: "PetcoCircularTT-Regular", arial !important;
   padding-right: 9%;
+  color: #000000;
 }
 
 /* accordion style */
@@ -525,7 +526,7 @@ body {
 
 .citrusHills__accordion-item.active .citrusHills__accordion-content {
   height: max-content;
-  margin-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .citrusHills__accordion-item .citrusHills__accordion-content {
@@ -1223,12 +1224,19 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 5%;
+  max-width: 576px;
+  margin: 0 auto;
 }
 
 .citrusHills_vet-transform_TextContainer {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
   padding-bottom: 10px;
+}
+
+.citrusHills_vet-transform_TextContainer img{
+  max-width: 143px;
+  margin: 0 auto;
 }
 
 .citrusHills_prescrition_diet {
@@ -1239,6 +1247,7 @@ body {
 
 .citrusHills_vet-transform_TextContainer h2 {
   color: #fff;
+  font-weight: 700;
 }
 
 .citrusHills_vet-transform_TextContainer p {
@@ -1246,6 +1255,8 @@ body {
   font-family: "PetcoCircularTT-Regular", arial !important;
   font-size: 16px;
   color: #fff;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 /* .citrusHills_vet-transform_TextContainer button {
