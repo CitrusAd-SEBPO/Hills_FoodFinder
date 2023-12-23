@@ -86,6 +86,7 @@
         -ms-flex-pack: center;
         justify-content: center;
         gap: 60px;
+        border-bottom: 1px solid #021b4e;
     }
 
     .citrus_hillsBP_paren_list {
@@ -125,6 +126,7 @@
         font-weight: bold;
         display: block;
         padding-top: 10px;
+        border-bottom: 8px solid transparent;
     }
 
     .MiCS_cat_best_tab_item_active_citrus_hillsBP {
@@ -179,8 +181,8 @@
     }
 
     .MiCS_tab_item_active_citrus_hillsBP .citrus_catagory-line-main h4 {
-        color: #001952;
-        border-bottom: 8px solid #001952;
+        color: white;
+        background: #001952;
     }
 
     .MiCS_cat_food_tab_citrus21_active_citrus21_citrus_hillsBP .citrus_catagory-line-main h4 {
@@ -194,12 +196,12 @@
         display: flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center;
+        justify-content: flex-start;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        margin-top: 40px;
-        border-bottom: 1px solid #021b4e;
+        margin-top: 30px;
+        /* border-bottom: 1px solid #021b4e; */
         margin-bottom: 25px;
     }
 
@@ -208,16 +210,21 @@
     }
 
     .citrus_catagory-line-main>h4 {
-        color: #9b9b9b;
-        font-size: 14px;
+        width: 200px;
+        height: 30px;
+        border: none;
+        border-radius: 20px;
+        font-size: 13.5px;
         font-family: "PetcoCircularTT-Bold", arial !important;
-        display: block;
-        padding: 20px 0px;
-        text-transform: uppercase;
-        margin: 0px 50px;
-        border-bottom: 8px solid transparent;
+        font-style: normal;
         cursor: pointer;
+        fill: #F0F0F0;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
 
     .citrus_hillsBP_dog_inner__content-item {
         display: -webkit-box;

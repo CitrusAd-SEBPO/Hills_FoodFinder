@@ -418,7 +418,7 @@ body {
 }
 
 .citrusHills__faqRight {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .citrusHills__faqTitle h2 {
@@ -427,6 +427,7 @@ body {
   font-weight: 900;
   color: #001952;
   font-family: "PetcoCircularTT-Bold", arial !important;
+  padding-bottom: 10px;
 }
 
 .citrusHills__faqTitle p {
