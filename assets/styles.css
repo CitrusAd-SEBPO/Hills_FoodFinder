@@ -85,7 +85,7 @@ body {
   justify-content: center;
   text-decoration: none;
   font-family: "PetcoCircularTT-Bold", arial !important;
-  font-weight: 900;
+  font-weight: 700;
   margin: 0 auto;
   font-size: 16px;
 }
@@ -151,6 +151,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 418px;
+  margin: 0 auto;
 }
 
 .citrusHills__desktopImage {
@@ -521,7 +523,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "PetcoCircularTT-Bold", arial !important;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .citrusHills__accordion-item.active .citrusHills__accordion-content {
