@@ -1236,6 +1236,12 @@ body {
   color: #00205B;
 }
 
+.citrusHills__speciesTab_container{
+    width: 1253px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 .citrusHills__speciesTab_container .citrusHills__speciesTab_buttons .citrusHills__speciesTab_item.citrusHills__species_active_tab {
   color: #001952;
   border-bottom: 10px solid #001952;
