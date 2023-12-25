@@ -12,15 +12,13 @@
  * Lineto.com, 2020
  */
 
-
- @font-face {
+@font-face {
   font-family: PetcoCircularTT-Regular;
-  src: url(../fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
-    url(../fonts/PetcoCircularTT-Regular.woff) format("woff");
+  src: url(fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
+    url(fonts/PetcoCircularTT-Regular.woff) format("woff");
 }
-
 @font-face {
   font-family: PetcoCircularTT-Bold;
-  src: url(../fonts/PetcoCircularTT-Bold.woff2) format("woff2"),
-    url(../fonts/PetcoCircularTT-Bold.woff) format("woff");
+  src: url(fonts/PetcoCircularTT-Bold.woff2) format("woff2"),
+    url(fonts/PetcoCircularTT-Bold.woff) format("woff");
 }
