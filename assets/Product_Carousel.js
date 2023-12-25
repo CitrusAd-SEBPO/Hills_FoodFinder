@@ -12,7 +12,6 @@ function filterSpeciesTab(species) {
 
   // Show the specific tab content
   document.getElementById(species).style.display = "block";
-  console.log(species)
   if (species === 'citrusHills__species-dog') {
     filterDogProducts("citrusHills-puppy_Dog-product");
   } 
