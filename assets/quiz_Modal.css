@@ -372,7 +372,7 @@
     cursor: pointer;
     font-size: 29px;
     font-family: "PetcoCircularTT-Bold", arial !important;
-    background-image: url("images/citrus_hills_cta-bg.png");
+    background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_hills_cta-bg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: unset;
@@ -537,7 +537,7 @@
   }
 
   .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet a:nth-child(1) button {
-    background-image: url("images/citrus_hills_cta-bg-cat.png");
+    background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_hills_cta-bg-cat");
     height: 147px;
     width: 50%;
   }
@@ -547,7 +547,7 @@
   }
 
   .citrus_hills .citrus_petco_hills_modal-body .search_content .chose-pet a:nth-child(3) button {
-    background-image: url("images/citrus_hills_cta-bg-dog.png");
+    background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_hills_cta-bg-dog");
     height: 147px;
     width: 50%;
   }
