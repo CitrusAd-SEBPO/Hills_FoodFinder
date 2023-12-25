@@ -1026,9 +1026,9 @@ body {
   align-items: center;
   margin-bottom: 30px;
   border-bottom: 1px solid #021b4e;
-  width: 100%;
+  /* width: 100%; */
   overflow-x: auto;
-
+  margin: 0 0 30px;
 }
 
 .citrusHills__speciesTab_item {
@@ -1208,7 +1208,7 @@ body {
   font-family: "PetcoCircularTT-Bold", arial !important;
   color: #001952;
   margin-top: 0;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-weight: 700;
   margin-bottom: 0;
 }
