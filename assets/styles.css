@@ -378,6 +378,12 @@ body {
     padding-bottom: 20px !important;
   }
 
+  /* product scroll tab */
+  .citrusHills__speciesTab_item {
+    width: 50%;
+    margin: 0 !important;
+  }
+
   /* End Brand Page */
 }
 
@@ -1155,6 +1161,7 @@ body {
   margin: 5px 0;
   font-family: "PetcoCircularTT-Bold", arial !important;
   font-weight: 700;
+  color: inherit;
 }
 
 @media screen and (max-width: 520px) {
